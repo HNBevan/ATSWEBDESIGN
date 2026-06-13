@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Courses in North England & Scotland - Accomplished Training Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/courses.css">
+    <link rel="stylesheet" href="styles/location.css">
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announcement-bar">
+    <i class="fas fa-certificate"></i>&nbsp; HSE Compliant Training | Established 2006 | UK Wide Coverage
+    <a href="contact.html">Get a Free Quote Today &rarr;</a>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="navbar-logo">
+            <img src="images/ats-logo.svg" alt="Accomplished Training Solutions" style="height:150px;width:auto;display:block;">
+        </a>
+        <div class="navbar-right">
+            <ul class="navbar-nav">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses.html">Course Catalogue</a></li>
+                <li class="nav-item-dropdown">
+                    <a href="index.html" style="color:var(--green);font-weight:700;">Training Regions <i class="fas fa-chevron-down nav-dropdown-arrow"></i></a>
+                    <div class="nav-dropdown-menu">
+                        <a href="london-south-east.html"><i class="fas fa-map-marker-alt"></i> London &amp; South East</a>
+                        <a href="south-west-wales.html"><i class="fas fa-map-marker-alt"></i> South West &amp; Wales</a>
+                        <a href="midlands.html"><i class="fas fa-map-marker-alt"></i> Midlands</a>
+                        <a href="north-england-scotland.html"><i class="fas fa-map-marker-alt"></i> North England &amp; Scotland</a>
+                    </div>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li class="nav-item-dropdown">
+                    <a href="blog.html">Blog <i class="fas fa-chevron-down nav-dropdown-arrow"></i></a>
+                    <div class="nav-dropdown-menu">
+                        <a href="blog.html"><i class="fas fa-th-list"></i> All Blog Posts</a>
+                        <a href="blog-fire-safety-london.html"><i class="fas fa-fire"></i> Fire Safety Training in London</a>
+                        <a href="blog-first-aid-training.html"><i class="fas fa-heart"></i> Why First Aid Training is Crucial</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="navbar-divider"></div>
+            <button class="search-btn" id="searchToggle"><i class="fas fa-search"></i></button>
+            <div class="navbar-divider"></div>
+            <a href="tel:0800XXXXXXX" class="navbar-phone"><i class="fas fa-phone-alt"></i> 0800 XXX XXXX</a>
+            <a href="contact.html" class="btn-primary" style="padding:10px 20px;font-size:0.87rem;margin-left:16px;"><i class="fas fa-file-alt"></i> Free Quote</a>
+        </div>
+        <div class="nav-mobile-right">
+            <button class="search-btn search-btn-mobile" id="searchToggleMobile"><i class="fas fa-search"></i></button>
+            <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </div>
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="Search courses, topics, regions..." autocomplete="off">
+            <button class="search-close" id="searchClose"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="search-results" id="searchResults"></div>
+        <div class="search-no-results" id="searchNoResults">No results found. Try a different search term.</div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="about.html">About Us</a>
+        <a href="courses.html">Course Catalogue</a>
+        <div class="mob-drop">
+            <button class="mob-drop-btn" id="mobRegionsBtn">Training Regions <i class="fas fa-chevron-down mob-chevron"></i></button>
+            <div class="mob-drop-body" id="mobRegionsBody">
+                <a href="london-south-east.html"><i class="fas fa-map-marker-alt"></i> London &amp; South East</a>
+                <a href="south-west-wales.html"><i class="fas fa-map-marker-alt"></i> South West &amp; Wales</a>
+                <a href="midlands.html"><i class="fas fa-map-marker-alt"></i> Midlands</a>
+                <a href="north-england-scotland.html"><i class="fas fa-map-marker-alt"></i> North England &amp; Scotland</a>
+            </div>
+        </div>
+        <a href="gallery.html">Gallery</a>
+        <a href="testimonials.html">Testimonials</a>
+        <div class="mob-drop">
+            <div class="mob-drop-split">
+                <a href="blog.html">Blog</a>
+                <button class="mob-drop-chevron" id="mobBlogBtn"><i class="fas fa-chevron-down mob-chevron"></i></button>
+            </div>
+            <div class="mob-drop-body" id="mobBlogBody">
+                <a href="blog-fire-safety-london.html"><i class="fas fa-fire"></i> Fire Safety Training in London</a>
+                <a href="blog-first-aid-training.html"><i class="fas fa-heart"></i> Why First Aid Training is Crucial</a>
+            </div>
+        </div>
+        <a href="contact.html">Contact</a>
+        <a href="tel:0800XXXXXXX" style="color:var(--green);font-weight:700;border-bottom:none;"><i class="fas fa-phone-alt"></i> 0800 XXX XXXX</a>
+    </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+    <div class="container">
+        <span class="section-tag">Training Regions</span>
+        <h1>Training Courses in North England &amp; Scotland</h1>
+        <p>Professional workplace training delivered across Manchester, Leeds, Glasgow, Edinburgh, Newcastle, Liverpool and throughout North England &amp; Scotland.</p>
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:28px;">
+            <a href="courses.html" class="btn-primary"><i class="fas fa-book-open"></i> View All Courses</a>
+            <a href="tel:0800XXXXXXX" class="btn-secondary"><i class="fas fa-phone-alt"></i> Call Us: 0800 XXX XXXX</a>
+        </div>
+    </div>
+</section>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb-bar">
+    <div class="container">
+        <nav class="breadcrumb-nav">
+            <a href="index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <div class="mob-drop">
+            <button class="mob-drop-btn" id="mobRegionsBtn">Training Regions <i class="fas fa-chevron-down mob-chevron"></i></button>
+            <div class="mob-drop-body" id="mobRegionsBody">
+                <a href="london-south-east.html"><i class="fas fa-map-marker-alt"></i> London &amp; South East</a>
+                <a href="south-west-wales.html"><i class="fas fa-map-marker-alt"></i> South West &amp; Wales</a>
+                <a href="midlands.html"><i class="fas fa-map-marker-alt"></i> Midlands</a>
+                <a href="north-england-scotland.html"><i class="fas fa-map-marker-alt"></i> North England &amp; Scotland</a>
+            </div>
+        </div>
+            <i class="fas fa-chevron-right"></i>
+            <span>North England &amp; Scotland</span>
+        </nav>
+    </div>
+</div>
+
+<!-- INTRO -->
+<section class="section-padding" style="background:white;">
+    <div class="container">
+        <span class="section-tag">North England &amp; Scotland</span>
+        <h2 class="section-title" style="text-align:left;margin-top:8px;">Expert Training Across North England &amp; Scotland</h2>
+        <p style="font-size:1rem;color:var(--gray);line-height:1.8;margin-bottom:16px;">Accomplished Training Solutions is proud to deliver professional workplace training courses throughout North England and Scotland. We provide on-site training at your workplace premises across Manchester, Leeds, Glasgow, Edinburgh, Liverpool, Newcastle, Sheffield, Aberdeen, and surrounding areas.</p>
+        <p style="font-size:1rem;color:var(--gray);line-height:1.8;margin-bottom:16px;">Our experienced trainers travel to businesses, schools, care homes, restaurants, offices, and organisations across the region, delivering HSE compliant <a href="blog-first-aid-training.html">first aid training</a>, <a href="blog-fire-safety-london.html">fire safety courses</a>, food hygiene qualifications, and health &amp; safety training. All certificates are issued on the same day, ensuring immediate compliance with UK workplace legislation.</p>
+        <p style="font-size:1rem;color:var(--gray);line-height:1.8;">Our training portfolio includes First Aid Training (Emergency First Aid at Work, First Aid at Work 3-Day, FAW Requalification, Paediatric First Aid), Fire Safety Training (Fire Warden, Fire Marshal, Fire Safety Awareness, Fire Risk Assessment), Food Safety Training (Level 1 &amp; 2 Food Hygiene, Allergen Awareness), and Health &amp; Safety Training (Manual Handling, Working at Heights, IOSH Managing Safely, Risk Assessment, COSHH Awareness). Whether you're based in Manchester city centre, Glasgow's commercial districts, Leeds' financial quarter, Edinburgh's business areas, or anywhere across North England and Scotland, we provide flexible on-site training with competitive group rates. Browse our full <a href="courses.html">course catalogue</a> or <a href="contact.html">contact us</a> for a quote.</p>
+        <div class="mini-courses-grid">
+            <div class="mini-course-card">
+                <div class="mini-course-card-img"><img src="images/first-aid.webp" alt="First Aid Training"></div>
+                <div class="mini-course-card-body">
+                    <h4>First Aid Training</h4>
+                    <p>EFAW, FAW 3-Day, Requalification, Paediatric First Aid and more. Same-day HSE certificates.</p>
+                    <a href="courses.html#first-aid">View First Aid Courses <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="mini-course-card">
+                <div class="mini-course-card-img"><img src="images/fire-warden-training.webp" alt="Fire Safety Training"></div>
+                <div class="mini-course-card-body">
+                    <h4>Fire Safety Training</h4>
+                    <p>Fire Warden, Fire Marshal, Fire Safety Awareness and Fire Risk Assessment courses.</p>
+                    <a href="courses.html#fire-safety">View Fire Safety Courses <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="mini-course-card">
+                <div class="mini-course-card-img"><img src="images/food-hygiene.webp" alt="Food Safety Training"></div>
+                <div class="mini-course-card-body">
+                    <h4>Food Safety Training</h4>
+                    <p>Level 1 &amp; 2 Food Hygiene and Allergen Awareness. Ideal for hospitality and catering.</p>
+                    <a href="courses.html#food-safety">View Food Safety Courses <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="mini-course-card">
+                <div class="mini-course-card-img"><img src="images/health-and-safety-coporate.webp" alt="Health and Safety Training"></div>
+                <div class="mini-course-card-body">
+                    <h4>Health &amp; Safety Training</h4>
+                    <p>Manual Handling, Working at Heights, IOSH Managing Safely, COSHH and Risk Assessment.</p>
+                    <a href="courses.html#health-safety">View H&amp;S Courses <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="mini-course-card">
+                <div class="mini-course-card-img"><img src="images/disability-discrimination-awareness-card.webp" alt="Specialist Training"></div>
+                <div class="mini-course-card-body">
+                    <h4>Specialist Training</h4>
+                    <p>Disability Discrimination Awareness and Mental Health First Aid for inclusive workplaces.</p>
+                    <a href="courses.html#specialist">View Specialist Courses <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="mini-course-card">
+                <div class="mini-course-card-img"><img src="images/coporate.webp" alt="Bespoke Training"></div>
+                <div class="mini-course-card-body">
+                    <h4>Bespoke Training</h4>
+                    <p>Custom training packages and multiple course bookings tailored to your business needs.</p>
+                    <a href="contact.html">Enquire About Bespoke <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- COMPLIANCE -->
+<section class="section-padding" style="background:var(--off-white);">
+    <div class="container">
+        <div class="sectors-header" style="margin-bottom:32px;">
+            <span class="section-tag">Legal Compliance</span>
+            <h2 class="section-title">Fully Compliant &amp; Legally Certified Training</h2>
+            <p class="section-subtitle" style="margin:0 auto;">All courses are fully compliant with HSE requirements and current UK legislation. We stay up-to-date with every regulatory change.</p>
+        </div>
+        <div class="compliance-alt-badges">
+            <div class="compliance-alt-badge"><i class="fas fa-shield-alt"></i><strong>HSE Compliant</strong><span>All courses meet HSE standards</span></div>
+            <div class="compliance-alt-badge"><i class="fas fa-certificate"></i><strong>Recognised Certs</strong><span>Accepted by insurers &amp; regulators</span></div>
+            <div class="compliance-alt-badge"><i class="fas fa-gavel"></i><strong>Legal Peace of Mind</strong><span>Demonstrate due diligence</span></div>
+            <div class="compliance-alt-badge"><i class="fas fa-calendar-check"></i><strong>3-Year Validity</strong><span>Certificates issued on completion</span></div>
+        </div>
+        <div class="compliance-alt-panel">
+            <div>
+                <span class="section-tag" style="background:rgba(255,255,255,0.15);color:white;border-color:rgba(255,255,255,0.3);">UK Legislation</span>
+                <h3 style="color:white;font-size:1.1rem;margin:12px 0 4px;">Courses comply with all current UK legislation:</h3>
+                <ul class="compliance-alt-list">
+                    <li><i class="fas fa-angle-right"></i> Health and Safety at Work Act 1974</li>
+                    <li><i class="fas fa-angle-right"></i> Management of H&amp;S at Work Regulations 1999</li>
+                    <li><i class="fas fa-angle-right"></i> Regulatory Reform (Fire Safety) Order 2005</li>
+                    <li><i class="fas fa-angle-right"></i> Manual Handling Operations Regulations 1992</li>
+                    <li><i class="fas fa-angle-right"></i> Food Safety Act 1990</li>
+                </ul>
+            </div>
+            <div class="compliance-alt-cta-box">
+                <h3>Ready to ensure your North England or Scotland business is fully compliant?</h3>
+                <p>Get a free quote within 24 hours. Our trainers come directly to your premises across the North and Scotland.</p>
+                <a href="contact.html" class="btn-primary" style="display:inline-block;"><i class="fas fa-file-alt"></i> Get a Free Quote</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MANCHESTER -->
+<section class="location-section" style="background:var(--off-white);">
+    <div class="container">
+        <div class="location-header">
+            <span class="section-tag">Manchester</span>
+            <h2 class="section-title" style="text-align:left;margin-top:8px;">Training Courses in Manchester &amp; Greater Manchester</h2>
+            <p style="font-size:0.95rem;color:var(--gray);line-height:1.7;">We deliver comprehensive workplace training throughout Manchester and Greater Manchester, serving businesses from the city centre through to Salford, Stockport, Bolton, Rochdale, and all surrounding boroughs. Manchester's diverse business landscape relies on our professional health &amp; safety and fire safety training services.</p>
+        </div>
+        <div class="area-cards two-col">
+            <div class="area-card">
+                <h5>Manchester City</h5>
+                <ul>
+                    <li>Manchester City Centre</li>
+                    <li>Salford</li>
+                    <li>Trafford</li>
+                    <li>Stretford</li>
+                    <li>Urmston</li>
+                    <li>Eccles</li>
+                    <li>Worsley</li>
+                </ul>
+            </div>
+            <div class="area-card">
+                <h5>Greater Manchester Boroughs</h5>
+                <ul>
+                    <li>Stockport</li>
+                    <li>Bolton</li>
+                    <li>Rochdale</li>
+                    <li>Oldham</li>
+                    <li>Bury</li>
+                    <li>Wigan</li>
+                    <li>Tameside</li>
+                    <li>Altrincham</li>
+                    <li>Sale</li>
+                </ul>
+            </div>
+        </div>
+        <p class="location-note">Our trainers understand Manchester's fast-paced business environment and deliver first aid and food hygiene training that minimises workplace disruption while ensuring full regulatory compliance. From financial services in Spinningfields to manufacturing in Trafford Park, we tailor every course to your sector.</p>
+        <div class="location-cta">
+            <a href="contact.html" class="btn-primary"><i class="fas fa-file-alt"></i> Book Manchester Training</a>
+        </div>
+    </div>
+</section>
+
+<!-- YORKSHIRE -->
+<section class="location-section" style="background:white;">
+    <div class="container">
+        <div class="location-header">
+            <span class="section-tag">Yorkshire</span>
+            <h2 class="section-title" style="text-align:left;margin-top:8px;">Training Courses in Yorkshire</h2>
+            <p style="font-size:0.95rem;color:var(--gray);line-height:1.7;">Yorkshire's industrial heritage and modern commercial sectors require training solutions that meet diverse needs. We deliver workplace training across Leeds, Sheffield, Bradford, York, Hull, and throughout West Yorkshire, South Yorkshire, North Yorkshire, and East Yorkshire.</p>
+        </div>
+        <div class="area-cards">
+            <div class="area-card">
+                <h5>West Yorkshire</h5>
+                <ul>
+                    <li>Leeds</li>
+                    <li>Bradford</li>
+                    <li>Huddersfield</li>
+                    <li>Halifax</li>
+                    <li>Wakefield</li>
+                </ul>
+            </div>
+            <div class="area-card">
+                <h5>South Yorkshire</h5>
+                <ul>
+                    <li>Sheffield</li>
+                    <li>Rotherham</li>
+                    <li>Barnsley</li>
+                    <li>Doncaster</li>
+                </ul>
+            </div>
+            <div class="area-card">
+                <h5>North &amp; East Yorkshire</h5>
+                <ul>
+                    <li>York</li>
+                    <li>Harrogate</li>
+                    <li>Scarborough</li>
+                    <li>Hull</li>
+                    <li>Middlesbrough</li>
+                    <li>Grimsby</li>
+                    <li>Scunthorpe</li>
+                </ul>
+            </div>
+        </div>
+        <p class="location-note">From manufacturing facilities in Sheffield to hospitality venues in York and offices in Leeds, we provide tailored manual handling, fire safety, and food hygiene training that meets Yorkshire's unique business requirements.</p>
+        <div class="location-cta">
+            <a href="contact.html" class="btn-primary"><i class="fas fa-file-alt"></i> Book Yorkshire Training</a>
+        </div>
+    </div>
+</section>
+
+<!-- NORTH WEST -->
+<section class="location-section" style="background:var(--off-white);">
+    <div class="container">
+        <div class="location-header">
+            <span class="section-tag">North West England</span>
+            <h2 class="section-title" style="text-align:left;margin-top:8px;">Training Courses in North West England</h2>
+            <p style="font-size:0.95rem;color:var(--gray);line-height:1.7;">The North West region encompasses Liverpool, Lancashire, Cumbria, and Cheshire. We deliver professional first aid training and fire safety courses across this diverse area, supporting businesses in retail, hospitality, manufacturing, healthcare, and all commercial sectors.</p>
+        </div>
+        <div class="area-cards">
+            <div class="area-card">
+                <h5>Merseyside</h5>
+                <ul>
+                    <li>Liverpool</li>
+                    <li>St Helens</li>
+                    <li>Southport</li>
+                </ul>
+            </div>
+            <div class="area-card">
+                <h5>Lancashire &amp; Cumbria</h5>
+                <ul>
+                    <li>Preston</li>
+                    <li>Blackpool</li>
+                    <li>Lancaster</li>
+                    <li>Burnley</li>
+                    <li>Blackburn</li>
+                    <li>Carlisle</li>
+                    <li>Kendal</li>
+                    <li>Barrow-in-Furness</li>
+                </ul>
+            </div>
+            <div class="area-card">
+                <h5>Cheshire</h5>
+                <ul>
+                    <li>Chester</li>
+                    <li>Warrington</li>
+                    <li>Crewe</li>
+                    <li>Macclesfield</li>
+                    <li>Runcorn</li>
+                </ul>
+            </div>
+        </div>
+        <p class="location-note">Whether your business is in Liverpool's commercial heart, Lancashire's industrial towns, Cumbria's tourism sector, or Cheshire's corporate locations, we deliver expert food hygiene and health &amp; safety training tailored to your industry. <a href="testimonials.html" style="color:var(--green);font-weight:600;">See our client testimonials.</a></p>
+        <div class="location-cta">
+            <a href="contact.html" class="btn-primary"><i class="fas fa-file-alt"></i> Book North West Training</a>
+        </div>
+    </div>
+</section>
+
+<!-- NORTH EAST -->
+<section class="location-section" style="background:white;">
+    <div class="container">
+        <div class="location-header">
+            <span class="section-tag">North East England</span>
+            <h2 class="section-title" style="text-align:left;margin-top:8px;">Training Courses in North East England</h2>
+            <p style="font-size:0.95rem;color:var(--gray);line-height:1.7;">The North East combines traditional industry with growing service sectors. We deliver health &amp; safety and first aid training throughout Newcastle, Sunderland, Durham, and across Northumberland, Tyne and Wear, County Durham, and Teesside.</p>
+        </div>
+        <div class="area-cards">
+            <div class="area-card">
+                <h5>Tyne &amp; Wear</h5>
+                <ul>
+                    <li>Newcastle upon Tyne</li>
+                    <li>Sunderland</li>
+                    <li>Gateshead</li>
+                    <li>South Shields</li>
+                    <li>North Shields</li>
+                    <li>Whitley Bay</li>
+                    <li>Tynemouth</li>
+                </ul>
+            </div>
+            <div class="area-card">
+                <h5>County Durham</h5>
+                <ul>
+                    <li>Durham</li>
+                    <li>Darlington</li>
+                    <li>Chester-le-Street</li>
+                    <li>Bishop Auckland</li>
+                </ul>
+            </div>
+            <div class="area-card">
+                <h5>Teesside &amp; Northumberland</h5>
+                <ul>
+                    <li>Hartlepool</li>
+                    <li>Stockton-on-Tees</li>
+                    <li>Ashington</li>
+                    <li>Blyth</li>
+                </ul>
+            </div>
+        </div>
+        <p class="location-note">Our trainers understand the North East's business culture and deliver fire safety and food hygiene training that meets the needs of this dynamic region's diverse industries, from traditional manufacturing to modern service sectors.</p>
+        <div class="location-cta">
+            <a href="contact.html" class="btn-primary"><i class="fas fa-file-alt"></i> Book North East Training</a>
+        </div>
+    </div>
+</section>
+
+<!-- SCOTLAND -->
+<section class="location-section" style="background:var(--off-white);">
+    <div class="container">
+        <div class="location-header">
+            <span class="section-tag">Scotland</span>
+            <h2 class="section-title" style="text-align:left;margin-top:8px;">Training Courses in Scotland</h2>
+            <p style="font-size:0.95rem;color:var(--gray);line-height:1.7;">We deliver workplace training throughout Scotland, from the Central Belt to the Highlands. Our trainers understand Scottish workplace regulations and deliver first aid, fire safety, and food hygiene courses that meet all Scottish and UK compliance requirements across Glasgow, Edinburgh, Aberdeen, Dundee, and beyond.</p>
+        </div>
+        <div class="area-cards">
+            <div class="area-card">
+                <h5>Greater Glasgow</h5>
+                <ul>
+                    <li>Glasgow</li>
+                    <li>Paisley</li>
+                    <li>East Kilbride</li>
+                    <li>Hamilton</li>
+                </ul>
+            </div>
+            <div class="area-card">
+                <h5>Edinburgh, Lothians &amp; Central</h5>
+                <ul>
+                    <li>Edinburgh</li>
+                    <li>Livingston</li>
+                    <li>Kirkcaldy</li>
+                    <li>Dunfermline</li>
+                    <li>Stirling</li>
+                    <li>Falkirk</li>
+                    <li>Perth</li>
+                </ul>
+            </div>
+            <div class="area-card">
+                <h5>North &amp; East Scotland</h5>
+                <ul>
+                    <li>Aberdeen</li>
+                    <li>Dundee</li>
+                    <li>Inverness</li>
+                    <li>Ayr</li>
+                    <li>Kilmarnock</li>
+                </ul>
+            </div>
+        </div>
+        <p class="location-note">From Glasgow's commercial districts to Edinburgh's business centres, Aberdeen's energy sector, and across all of Scotland, we deliver professional, compliant health &amp; safety training solutions. <a href="testimonials.html" style="color:var(--green);font-weight:600;">Read what our clients say.</a></p>
+        <div class="location-cta">
+            <a href="contact.html" class="btn-primary"><i class="fas fa-file-alt"></i> Book Scotland Training</a>
+        </div>
+    </div>
+</section>
+
+<!-- COURSES AVAILABLE -->
+<section class="section-padding" style="background:var(--navy);">
+    <div class="container">
+        <div class="courses-header">
+            <span class="section-tag" style="background:rgba(255,255,255,0.12);color:white;border-color:rgba(255,255,255,0.25);">Courses Available</span>
+            <h2 class="section-title" style="color:white;">Training Courses Available in North England &amp; Scotland</h2>
+            <p class="section-subtitle" style="margin:0 auto;color:rgba(255,255,255,0.7);">We deliver a comprehensive range of workplace training courses across Manchester, Leeds, Glasgow, Edinburgh, Liverpool, Newcastle, Sheffield, Aberdeen, and the wider region. All courses are nationally accredited, HSE compliant, and delivered by experienced trainers directly at your workplace premises.</p>
+        </div>
+        <div class="courses-category-grid">
+            <div class="course-category-card">
+                <i class="fas fa-first-aid"></i>
+                <h4>First Aid Training in North England and Scotland</h4>
+            </div>
+            <div class="course-category-card">
+                <i class="fas fa-fire-extinguisher"></i>
+                <h4>Fire Safety Training in North England and Scotland</h4>
+            </div>
+            <div class="course-category-card">
+                <i class="fas fa-utensils"></i>
+                <h4>Food Safety Training in North England and Scotland</h4>
+            </div>
+            <div class="course-category-card">
+                <i class="fas fa-hard-hat"></i>
+                <h4>Health and Safety Training in North England and Scotland</h4>
+            </div>
+        </div>
+        <p style="font-size:0.95rem;color:rgba(255,255,255,0.75);line-height:1.8;margin-top:28px;">Our training portfolio includes First Aid Training (Emergency First Aid at Work, First Aid at Work 3-Day, FAW Requalification, Paediatric First Aid), Fire Safety Training (Fire Warden, Fire Marshal, Fire Safety Awareness, Fire Risk Assessment), Food Safety Training (Level 1 &amp; 2 Food Hygiene, Allergen Awareness), and Health &amp; Safety Training (Manual Handling, Working at Heights, IOSH Managing Safely, Risk Assessment, COSHH Awareness). Whether you're based in Manchester city centre, Glasgow's commercial districts, Leeds' financial quarter, Edinburgh's business areas, or anywhere across North England and Scotland, we provide flexible on-site training with competitive group rates.</p>
+        <div style="margin-top:28px;">
+            <a href="courses.html" class="btn-primary"><i class="fas fa-list"></i> View All Our Courses</a>
+        </div>
+    </div>
+</section>
+
+<!-- WHY CHOOSE - CARDS -->
+<section class="why-section section-padding">
+    <div class="container">
+        <div class="why-header">
+            <span class="section-tag">Why Choose Us</span>
+            <h2 class="section-title">Why Choose Our North England &amp; Scotland Training?</h2>
+        </div>
+        <div class="why-grid">
+            <div class="why-card anim-card">
+                <div class="why-icon blue"><i class="fas fa-map-marked-alt"></i></div>
+                <h3>Northern Specialists</h3>
+                <p>Experienced in delivering training across all major Northern cities and Scottish regions.</p>
+            </div>
+            <div class="why-card anim-card">
+                <div class="why-icon green"><i class="fas fa-map"></i></div>
+                <h3>Regional Coverage</h3>
+                <p>Complete coverage of Manchester, Yorkshire, North West, North East, and all of Scotland.</p>
+            </div>
+            <div class="why-card anim-card">
+                <div class="why-icon gold"><i class="fas fa-calendar-alt"></i></div>
+                <h3>Flexible Scheduling</h3>
+                <p>Early morning, evening, and weekend training available to suit all businesses.</p>
+            </div>
+            <div class="why-card anim-card">
+                <div class="why-icon teal"><i class="fas fa-building"></i></div>
+                <h3>On-Site Delivery</h3>
+                <p>All training delivered at your workplace premises with all equipment provided.</p>
+            </div>
+            <div class="why-card anim-card">
+                <div class="why-icon purple"><i class="fas fa-users"></i></div>
+                <h3>Group Discounts</h3>
+                <p>Competitive rates for multiple delegates and team bookings across all regions.</p>
+            </div>
+            <div class="why-card anim-card">
+                <div class="why-icon red"><i class="fas fa-pencil-ruler"></i></div>
+                <h3>Bespoke Training</h3>
+                <p>We tailor our courses to your specific industry, workplace and team requirements. <a href="contact.html" style="color:var(--green);font-weight:600;">Get in touch.</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHY CHOOSE - TEXT -->
+<section class="section-padding" style="background:var(--off-white);">
+    <div class="container">
+        <div style="max-width:860px;margin:0 auto;text-align:center;">
+            <span class="section-tag">Our Commitment</span>
+            <h2 class="section-title" style="margin-top:8px;">Comprehensive Training Solutions for the North</h2>
+            <p style="font-size:0.95rem;color:var(--gray);line-height:1.8;margin-bottom:16px;">Accomplished Training Solutions understands the unique training needs of businesses across North England and Scotland. Our trainers are experienced in working with diverse industries, from manufacturing and construction in Yorkshire and the North East, to financial services in Manchester and Edinburgh, hospitality throughout Scotland, and healthcare across the entire region. <a href="about.html" style="color:var(--green);font-weight:600;">Find out more about us.</a></p>
+            <p style="font-size:0.95rem;color:var(--gray);line-height:1.8;margin-bottom:16px;">We deliver all training courses directly at your workplace, whether that's a city centre office in Leeds, a manufacturing facility in Newcastle, a care home in Glasgow, or a restaurant in Liverpool. This on-site approach minimises disruption to your business operations while ensuring your team receives the highest quality training.</p>
+            <p style="font-size:0.95rem;color:var(--gray);line-height:1.8;">All our courses are delivered by qualified, experienced trainers who understand current UK legislation and industry best practices. Certificates are issued on the same day, providing immediate proof of compliance. <a href="testimonials.html" style="color:var(--green);font-weight:600;">Read our client testimonials</a> or <a href="contact.html" style="color:var(--green);font-weight:600;">get in touch for a free quote.</a> We also serve <a href="london-south-east.html">London and South East</a>, <a href="south-west-wales.html">South West and Wales</a>, and <a href="midlands.html">Midlands</a>.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SECTORS -->
+<section class="section-padding" style="background:var(--off-white);">
+    <div class="container">
+        <div class="sectors-header">
+            <span class="section-tag">Industries</span>
+            <h2 class="section-title">Sectors We Serve</h2>
+            <p class="section-subtitle" style="margin:0 auto;">Tailored health and safety training for businesses across all industries.</p>
+        </div>
+        <div class="sectors-alt-grid">
+            <div class="sectors-alt-card"><div class="sectors-alt-icon"><i class="fas fa-shopping-cart"></i></div><div><h4>Retail</h4><p>Stores, supermarkets &amp; warehouses</p></div></div>
+            <div class="sectors-alt-card"><div class="sectors-alt-icon"><i class="fas fa-school"></i></div><div><h4>Schools &amp; Education</h4><p>Schools, colleges &amp; universities</p></div></div>
+            <div class="sectors-alt-card"><div class="sectors-alt-icon"><i class="fas fa-hard-hat"></i></div><div><h4>Construction</h4><p>Building sites &amp; contractors</p></div></div>
+            <div class="sectors-alt-card"><div class="sectors-alt-icon"><i class="fas fa-utensils"></i></div><div><h4>Hospitality</h4><p>Restaurants, hotels &amp; catering</p></div></div>
+            <div class="sectors-alt-card"><div class="sectors-alt-icon"><i class="fas fa-heartbeat"></i></div><div><h4>Healthcare</h4><p>Care homes, clinics &amp; NHS</p></div></div>
+            <div class="sectors-alt-card"><div class="sectors-alt-icon"><i class="fas fa-briefcase"></i></div><div><h4>Offices &amp; Corporate</h4><p>All commercial business sectors</p></div></div>
+        </div>
+        <div style="text-align:center;margin-top:36px;">
+            <a href="courses.html" class="btn-primary">View All Our Courses</a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section section-padding">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Book Training in the North or Scotland Today</h2>
+            <p>Get a free, no-obligation quote for workplace training at your North England or Scotland premises.</p>
+            <div class="cta-actions">
+                <a href="contact.html" class="btn-primary"><i class="fas fa-file-alt"></i> Get a Free Quote</a>
+                <a href="testimonials.html" class="btn-secondary"><i class="fas fa-star"></i> Read Testimonials</a>
+                <a href="gallery.html" class="btn-secondary"><i class="fas fa-images"></i> View Gallery</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- COVERAGE GRID -->
+<section class="section-padding" style="background:white;">
+    <div class="container">
+        <div class="coverage-header">
+            <span class="section-tag">Coverage Map</span>
+            <h2 class="section-title">Our Coverage Area &amp; Training Locations</h2>
+        </div>
+        <div class="coverage-grid">
+            <div class="coverage-region"><h4>Kent</h4><ul><li>Maidstone</li><li>Canterbury</li><li>Ashford</li><li>Tunbridge Wells</li><li>Dover</li></ul></div>
+            <div class="coverage-region"><h4>Sussex</h4><ul><li>Brighton</li><li>Eastbourne</li><li>Hastings</li><li>Crawley</li><li>Worthing</li></ul></div>
+            <div class="coverage-region"><h4>Surrey</h4><ul><li>Guildford</li><li>Woking</li><li>Croydon</li><li>Epsom</li><li>Redhill</li></ul></div>
+            <div class="coverage-region"><h4>London</h4><ul><li>Central London</li><li>South London</li><li>East London</li><li>West London</li><li>North London</li></ul></div>
+            <div class="coverage-region"><h4>Midlands &amp; North</h4><ul><li>Birmingham</li><li>Manchester</li><li>Leeds</li><li>Nottingham</li><li>Sheffield</li></ul></div>
+            <div class="coverage-region"><h4>East of England</h4><ul><li>Norwich</li><li>Cambridge</li><li>Ipswich</li><li>Peterborough</li></ul></div>
+            <div class="coverage-nationwide">
+                <h4>Nationwide Coverage</h4>
+                <p>We deliver professional health and safety training anywhere in the United Kingdom. Contact us to arrange training at your premises.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="section-padding" style="background:var(--off-white);">
+    <div class="container">
+        <div class="faq-header">
+            <span class="section-tag">FAQs</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <h4>Are there specific cold weather or winter safety training modules required in the North and Scotland?</h4>
+                    <div class="faq-icon"><i class="fas fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">Yes. Mandatory winter training covers topics like slips and falls on ice, safe use of de-icing agents, maintaining adequate vehicle breakdown kits, and procedures for accessing sites during extreme weather conditions. This is particularly relevant for businesses with outdoor workers, delivery operations, and rural sites across the North and Scotland.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <h4>Does the Scottish Government's regulatory framework affect our standard health and safety training content?</h4>
+                    <div class="faq-icon"><i class="fas fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">While the core legal duties remain the same (HSE-enforced across Great Britain), training may highlight areas where Scottish regulations or guidance provide specific direction, such as zero-emission zones in city centres. All policies confirm adherence to HSE (GB) standards regardless of location, and our trainers are familiar with any Scottish-specific workplace considerations.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <h4>What training is provided regarding work in or near water for ports, docks, and waterways in the North?</h4>
+                    <div class="faq-icon"><i class="fas fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">For any employee whose duties bring them near docks, rivers, or large bodies of water, mandatory Water Safety Awareness Training and location-specific training on the use of throw lines or life jackets is required. This is particularly relevant for businesses operating near Liverpool's docks, Newcastle's waterfront, and the many coastal and waterway sites across Scotland and the North East.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <h4>Can you deliver training to multiple sites across the North and Scotland in the same week?</h4>
+                    <div class="faq-icon"><i class="fas fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">Yes. We can coordinate multi-site training programmes across the North and Scotland, scheduling our trainers to visit different premises across multiple days or the same week. This is ideal for businesses with multiple branches or facilities spread across the region. Contact us to discuss a bespoke programme and get a consolidated quote.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section section-padding" id="contact">
+    <div class="container">
+        <div style="text-align:center;margin-bottom:48px;">
+            <span class="section-tag">Get In Touch</span>
+            <h2 class="section-title">Contact Us Today</h2>
+            <p class="section-subtitle" style="margin:0 auto;">We're here to help. Contact us for expert advice on the right training for your business.</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <p>Ready to discuss your training needs? Our expert team is here to help you find the right solution for your business.</p>
+                <div class="contact-items">
+                    <div class="contact-item">
+                        <div class="contact-item-icon green"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-item-text"><strong>Email</strong><span><a href="mailto:info@accomplishedtraining.co.uk">info@accomplishedtraining.co.uk</a></span></div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon navy"><i class="fas fa-phone-alt"></i></div>
+                        <div class="contact-item-text"><strong>Phone</strong><span><a href="tel:0800XXXXXXX">0800 XXX XXXX</a></span></div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon gold"><i class="fas fa-clock"></i></div>
+                        <div class="contact-item-text"><strong>Hours</strong><span>Mon&ndash;Fri 9:00 AM &ndash; 5:00 PM</span></div>
+                    </div>
+                </div>
+                <div style="margin-top:28px;padding:24px;background:white;border-radius:var(--radius-md);border:1px solid var(--light-gray);">
+                    <h4 style="font-size:0.9rem;font-weight:700;color:var(--navy);margin-bottom:12px;"><i class="fas fa-map-marker-alt" style="color:var(--green);margin-right:8px;"></i>Training Locations</h4>
+                    <p style="font-size:0.85rem;color:var(--gray);line-height:1.6;">We deliver training at your workplace premises, schools and educational facilities, community centres and hired training venues nationwide.</p>
+                </div>
+            </div>
+            <div style="position:relative;min-height:420px;height:100%;overflow:hidden;border:1px solid var(--light-gray);box-shadow:var(--shadow-md);">
+                <iframe
+                    src="https://maps.google.com/maps?q=United+Kingdom&output=embed&z=5"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;display:block;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="ATS Training Coverage, North England and Scotland">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-main">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="navbar-logo" style="margin-bottom:0;">
+                        <img src="images/ats-logo.svg" alt="Accomplished Training Solutions" style="height:90px;width:auto;display:block;">
+                    </a>
+                    <p>Delivering professional health and safety training across the UK since 2006. Committed to quality, engaging and certified training for businesses of all sizes.</p>
+                    <p style="font-size:0.8rem;color:rgba(255,255,255,0.35);">Service Areas: Nationwide, with focus on Kent, Sussex, Surrey, London and surrounding areas.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="courses.html">Course Catalogue</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="javascript:void(0)">Training Regions</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Popular Courses</h4>
+                    <ul>
+                        <li><a href="courses.html#first-aid">First Aid Training</a></li>
+                        <li><a href="courses.html#fire-safety">Fire Safety Training</a></li>
+                        <li><a href="courses.html#food-safety">Food Hygiene</a></li>
+                        <li><a href="courses.html#health-safety">Manual Handling</a></li>
+                        <li><a href="courses.html#health-safety">Health &amp; Safety</a></li>
+                        <li><a href="courses.html#specialist">Mental Health FA</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:info@accomplishedtraining.co.uk"><i class="fas fa-envelope" style="width:16px;"></i> info@accomplishedtraining.co.uk</a></li>
+                        <li><a href="tel:0800XXXXXXX"><i class="fas fa-phone" style="width:16px;"></i> 0800 XXX XXXX</a></li>
+                        <li><a href="#"><i class="fas fa-clock" style="width:16px;"></i> Mon-Fri: 9am - 5pm</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="container">
+        <div class="footer-bottom">
+            <p>&copy; 2026 Accomplished Training Solutions. All rights reserved. | Established 2006</p>
+            <div class="footer-bottom-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="cookie-policy.html">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

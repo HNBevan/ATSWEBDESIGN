@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why First Aid Training is Crucial for Every Company in the UK - ATS Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/courses.css">
+    <link rel="stylesheet" href="styles/blog-article.css">
+    <style>
+        .article-hero-img { height: 440px; }
+        .article-hero-img img { object-position: center 70%; }
+        .article-callout { background: #e8f5e9; border-left: 4px solid var(--green); }
+        .article-callout-icon { color: var(--green); }
+    </style>
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announcement-bar">
+    <i class="fas fa-certificate"></i>&nbsp; HSE Compliant Training | Established 2006 | UK Wide Coverage
+    <a href="contact.html">Get a Free Quote Today â†’</a>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="navbar-logo">
+            <img src="images/ats-logo.svg" alt="Accomplished Training Solutions" style="height:150px;width:auto;display:block;">
+        </a>
+        <div class="navbar-right">
+            <ul class="navbar-nav">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses.html">Course Catalogue</a></li>
+                <li class="nav-item-dropdown">
+                    <a href="javascript:void(0)">Training Regions <i class="fas fa-chevron-down nav-dropdown-arrow"></i></a>
+                    <div class="nav-dropdown-menu">
+                        <a href="london-south-east.html"><i class="fas fa-map-marker-alt"></i> London &amp; South East</a>
+                        <a href="south-west-wales.html"><i class="fas fa-map-marker-alt"></i> South West &amp; Wales</a>
+                        <a href="midlands.html"><i class="fas fa-map-marker-alt"></i> Midlands</a>
+                        <a href="north-england-scotland.html"><i class="fas fa-map-marker-alt"></i> North England &amp; Scotland</a>
+                    </div>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li class="nav-item-dropdown">
+                    <a href="blog.html" style="color:var(--green);font-weight:700;">Blog <i class="fas fa-chevron-down nav-dropdown-arrow"></i></a>
+                    <div class="nav-dropdown-menu">
+                        <a href="blog.html"><i class="fas fa-th-list"></i> All Blog Posts</a>
+                        <a href="blog-fire-safety-london.html"><i class="fas fa-fire"></i> Fire Safety Training in London</a>
+                        <a href="blog-first-aid-training.html"><i class="fas fa-heart"></i> Why First Aid Training is Crucial</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="navbar-divider"></div>
+            <button class="search-btn" id="searchToggle" aria-label="Search"><i class="fas fa-search"></i></button>
+            <div class="navbar-divider"></div>
+            <a href="tel:0800XXXXXXX" class="navbar-phone"><i class="fas fa-phone-alt"></i> 0800 XXX XXXX</a>
+            <a href="contact.html" class="btn-primary" style="padding:10px 20px;font-size:0.87rem;margin-left:16px;"><i class="fas fa-file-alt"></i> Free Quote</a>
+        </div>
+        <div class="nav-mobile-right">
+            <button class="search-btn search-btn-mobile" id="searchToggleMobile"><i class="fas fa-search"></i></button>
+            <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </div>
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="Search courses, topics, regions..." autocomplete="off">
+            <button class="search-close" id="searchClose"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="search-results" id="searchResults"></div>
+        <div class="search-no-results" id="searchNoResults">No results found. Try a different search term.</div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="about.html">About Us</a>
+        <a href="courses.html">Course Catalogue</a>
+        <div class="mob-drop">
+            <button class="mob-drop-btn" id="mobRegionsBtn">Training Regions <i class="fas fa-chevron-down mob-chevron"></i></button>
+            <div class="mob-drop-body" id="mobRegionsBody">
+                <a href="london-south-east.html"><i class="fas fa-map-marker-alt"></i> London &amp; South East</a>
+                <a href="south-west-wales.html"><i class="fas fa-map-marker-alt"></i> South West &amp; Wales</a>
+                <a href="midlands.html"><i class="fas fa-map-marker-alt"></i> Midlands</a>
+                <a href="north-england-scotland.html"><i class="fas fa-map-marker-alt"></i> North England &amp; Scotland</a>
+            </div>
+        </div>
+        <a href="gallery.html">Gallery</a>
+        <a href="testimonials.html">Testimonials</a>
+        <div class="mob-drop">
+            <div class="mob-drop-split">
+                <a href="blog.html" style="color:var(--green);font-weight:700;">Blog</a>
+                <button class="mob-drop-chevron" id="mobBlogBtn"><i class="fas fa-chevron-down mob-chevron"></i></button>
+            </div>
+            <div class="mob-drop-body" id="mobBlogBody">
+                <a href="blog-fire-safety-london.html"><i class="fas fa-fire"></i> Fire Safety Training in London</a>
+                <a href="blog-first-aid-training.html"><i class="fas fa-heart"></i> Why First Aid Training is Crucial</a>
+            </div>
+        </div>
+        <a href="contact.html">Contact</a>
+        <a href="tel:0800XXXXXXX" style="color:var(--green);font-weight:700;border-bottom:none;"><i class="fas fa-phone-alt"></i> 0800 XXX XXXX</a>
+    </div>
+</nav>
+
+<!-- ARTICLE HERO -->
+<section class="article-hero">
+    <div class="container">
+        <a href="blog.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Blog</a>
+        <div class="article-hero-tag">First Aid</div>
+        <h1>Why First Aid Training is Crucial for Every Company in the UK</h1>
+        <div class="article-meta">
+            <span><i class="fas fa-calendar-alt"></i> Published: December 12, 2025</span>
+            <span><i class="fas fa-clock"></i> Reading time: 6 minutes</span>
+            <span><i class="fas fa-tag"></i> First Aid</span>
+        </div>
+    </div>
+    <div class="article-hero-img">
+        <img src="images/emergency-first-aid.webp" alt="Why First Aid Training is Crucial for Every Company">
+    </div>
+</section>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb-bar">
+    <div class="container">
+        <nav class="breadcrumb-nav">
+            <a href="index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="blog.html">Blog</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Why First Aid Training is Crucial</span>
+        </nav>
+    </div>
+</div>
+
+<!-- ARTICLE BODY -->
+<section class="section-padding" style="background:var(--off-white);">
+    <div class="container">
+        <div class="article-layout">
+
+            <!-- MAIN CONTENT -->
+            <article class="article-content">
+                <p>Every workplace, regardless of size or industry, faces the possibility of medical emergencies. From minor injuries to life-threatening situations, having trained first aiders on site can make the critical difference in outcomes. Here's why first aid training should be a cornerstone of every company's safety strategy.</p>
+
+                <h2>Legal Requirements for Workplace First Aid</h2>
+                <p>Under the Health and Safety (First-Aid) Regulations 1981, all employers in the UK must:</p>
+                <ul>
+                    <li>Provide adequate and appropriate first aid equipment, facilities, and personnel</li>
+                    <li>Conduct a first aid needs assessment to determine requirements</li>
+                    <li>Inform all employees of first aid arrangements</li>
+                    <li>Ensure first aid provision is available at all times when people are at work</li>
+                </ul>
+                <p>The HSE (Health and Safety Executive) can impose significant fines on companies that fail to meet these requirements, but more importantly, the absence of trained first aiders puts employees at serious risk.</p>
+
+                <h2>The Business Case for First Aid Training</h2>
+                <p>Beyond legal compliance, first aid training delivers tangible benefits to organisations:</p>
+
+                <h3>Reduced Severity of Injuries</h3>
+                <p>Immediate first aid response can prevent minor injuries from becoming major ones. Quick action on cuts, burns, or sprains can significantly reduce recovery time and prevent complications.</p>
+
+                <h3>Decreased Absenteeism</h3>
+                <p>Proper first aid treatment means employees recover faster and return to work sooner, reducing costs associated with sick leave and temporary cover.</p>
+
+                <h3>Enhanced Company Culture</h3>
+                <p>Investing in first aid training demonstrates that you value employee wellbeing, boosting morale and showing genuine commitment to safety.</p>
+
+                <h3>Reduced Insurance Premiums</h3>
+                <p>Many insurers offer reduced premiums for companies with comprehensive first aid programs, recognising the reduced risk profile.</p>
+
+                <h2>Common Workplace Medical Emergencies</h2>
+                <p>First aid training prepares your team to handle a wide range of incidents that commonly occur in workplace environments:</p>
+
+                <h3>Slips, Trips, and Falls</h3>
+                <p>The most common workplace accidents, potentially causing fractures, sprains, or head injuries.</p>
+
+                <h3>Cuts and Lacerations</h3>
+                <p>From minor cuts to severe bleeding requiring immediate pressure and dressing.</p>
+
+                <h3>Burns and Scalds</h3>
+                <p>Particularly common in kitchens, manufacturing, or anywhere hot equipment is used.</p>
+
+                <h3>Cardiac Arrests</h3>
+                <p>Immediate CPR and defibrillation can triple survival rates.</p>
+
+                <h3>Choking Incidents</h3>
+                <p>Especially relevant in workplaces with canteens or dining facilities.</p>
+
+                <h3>Allergic Reactions</h3>
+                <p>From mild reactions to severe anaphylaxis requiring immediate intervention.</p>
+
+                <h2>Types of First Aid Training for Workplaces</h2>
+                <p>Different workplace environments require different levels of first aid provision:</p>
+
+                <h3>Emergency First Aid at Work (EFAW)</h3>
+                <p>A one-day course suitable for low-risk environments like offices and shops. Covers basic first aid skills and emergency procedures.</p>
+
+                <h3><a href="courses.html#first-aid">First Aid at Work (FAW)</a></h3>
+                <p>A comprehensive three-day course required for higher-risk workplaces like construction, manufacturing, or warehouses. Provides in-depth training on a wide range of medical emergencies.</p>
+
+                <h3>Paediatric First Aid</h3>
+                <p>Essential for schools, nurseries, and childcare facilities, focusing on first aid for infants and children.</p>
+
+                <h2>How Many First Aiders Do You Need?</h2>
+                <p>The number of trained first aiders required depends on several factors:</p>
+                <ul>
+                    <li><strong>Workplace size:</strong> Number of employees on site</li>
+                    <li><strong>Nature of work:</strong> Level of risk in your industry</li>
+                    <li><strong>Work patterns:</strong> Shift work requires coverage across all shifts</li>
+                    <li><strong><a href="london-south-east.html">Location</a>:</strong> Proximity to emergency medical services</li>
+                    <li><strong>Accident history:</strong> Previous incident records at your workplace</li>
+                </ul>
+                <p>As a general guide, the HSE recommends at least one first aider for every 50 employees in low-risk environments, with higher ratios for high-risk workplaces.</p>
+
+                <h2>Keeping Skills Current</h2>
+                <p>First aid certificates are typically valid for three years, but the HSE recommends annual refresher training to maintain competence. Regular practice and updates on new techniques ensure first aiders remain confident and effective when emergencies arise.</p>
+
+                <div class="article-callout">
+                    <div class="article-callout-icon"><i class="fas fa-check-circle"></i></div>
+                    <div>
+                        <h4>Invest in Your Team's Safety</h4>
+                        <p>First aid training is an investment in your most valuable asset : your people. Don't leave your employees' safety to chance. Ensure your workplace has adequate first aid coverage with professionally trained personnel. Contact <a href="contact.html">Accomplished Training Solutions</a> today to arrange comprehensive first aid training tailored to your company's specific needs.</p>
+                    </div>
+                </div>
+
+                <div class="article-cta-inline">
+                    <h3>Explore Our First Aid Training Options</h3>
+                    <a href="courses.html#first-aid" class="btn-primary"><i class="fas fa-first-aid"></i> View First Aid Courses</a>
+                    <a href="contact.html" class="btn-outline" style="margin-top:8px;display:inline-block;"><i class="fas fa-file-alt"></i> Get a Free Quote</a>
+                </div>
+            </article>
+
+            <!-- SIDEBAR -->
+            <aside class="article-sidebar">
+
+                <div class="sidebar-cta">
+                    <h4>Need First Aid Training?</h4>
+                    <p>We deliver Emergency First Aid at Work and First Aid at Work courses directly at your premises, nationwide. See our <a href="gallery.html">gallery of training in action</a>.</p>
+                    <a href="contact.html" class="btn-primary" style="display:block;text-align:center;"><i class="fas fa-file-alt"></i> Get a Free Quote</a>
+                </div>
+
+                <div class="sidebar-card">
+                    <h4>In This Article</h4>
+                    <ul class="sidebar-toc">
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Legal Requirements for Workplace First Aid</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> The Business Case for First Aid Training</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Common Workplace Medical Emergencies</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Types of First Aid Training</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> How Many First Aiders Do You Need?</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Keeping Skills Current</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card">
+                    <h4>Related Posts</h4>
+                    <div class="sidebar-related-post">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=120&q=80" alt="Fire Safety Training">
+                        <div class="sidebar-related-post-text">
+                            <span>Fire Safety</span>
+                            <a href="blog-fire-safety-london.html">Fire Safety Training in London: Essential Guidelines for Businesses</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-card">
+                    <h4>Our First Aid Courses</h4>
+                    <ul class="sidebar-toc">
+                        <li><a href="courses.html#first-aid"><i class="fas fa-angle-right"></i> Emergency First Aid at Work</a></li>
+                        <li><a href="courses.html#first-aid"><i class="fas fa-angle-right"></i> First Aid at Work (3-Day)</a></li>
+                        <li><a href="courses.html#first-aid"><i class="fas fa-angle-right"></i> Paediatric First Aid</a></li>
+                        <li><a href="courses.html#first-aid"><i class="fas fa-angle-right"></i> First Aid Refresher</a></li>
+                    </ul>
+                </div>
+
+            </aside>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section section-padding">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to Book Your Workplace Training?</h2>
+            <p>We deliver first aid, <a href="blog-fire-safety-london.html">fire safety</a>, food hygiene and health &amp; safety training directly to your workplace across the UK. All courses are HSE compliant and certificates are issued on the day.</p>
+            <div class="cta-actions">
+                <a href="contact.html" class="btn-primary"><i class="fas fa-file-alt"></i> Get a Free Quote</a>
+                <div class="cta-phone">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Call: <a href="tel:0800XXXXXXX">0800 XXX XXXX</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQs -->
+<section class="section-padding" style="background:var(--off-white);">
+    <div class="container">
+        <div class="faq-header">
+            <span class="section-tag">Common Questions</span>
+            <h2 class="section-title">First Aid Training FAQs</h2>
+            <p class="section-subtitle" style="margin:0 auto;">Answers to the questions we get asked most often about workplace first aid training.</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <h4>Is first aid training a legal requirement for employers?</h4>
+                    <div class="faq-icon"><i class="fas fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. Under the Health and Safety (First-Aid) Regulations 1981, all employers must provide adequate and appropriate first aid equipment, facilities, and trained personnel. The level of provision required depends on your workplace size, industry risk level, and the findings of your first aid needs assessment.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <h4>How long is a first aid certificate valid?</h4>
+                    <div class="faq-icon"><i class="fas fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>First Aid at Work (FAW) and Emergency First Aid at Work (EFAW) certificates are valid for three years. To renew, first aiders must complete a requalification course before their certificate expires; if the certificate lapses, the full course must be retaken. The HSE also recommends annual refresher training to keep skills sharp between requalifications.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <h4>What is the difference between EFAW and FAW?</h4>
+                    <div class="faq-icon"><i class="fas fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Emergency First Aid at Work (EFAW) is a one-day course covering essential skills for low-risk environments such as offices and retail. First Aid at Work (FAW) is a comprehensive three-day course required in higher-risk workplaces such as construction, manufacturing, or warehousing. FAW covers a much wider range of medical emergencies and is more suitable for designated workplace first aiders.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <h4>How many first aiders does my company need?</h4>
+                    <div class="faq-icon"><i class="fas fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>The HSE recommends at least one first aider per 50 employees in low-risk environments. Higher-risk workplaces require greater provision. You also need to ensure coverage across all shifts and consider the size and layout of your premises. A first aid needs assessment , which we can advise on, will determine the exact level of provision your business requires.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <h4>Can first aid training be delivered at our workplace?</h4>
+                    <div class="faq-icon"><i class="fas fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, all of our first aid courses are delivered on-site at your premises anywhere in the UK. On-site training means your team can practise in a familiar environment and we can tailor scenarios to your specific workplace risks, making the training far more relevant and impactful.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <h4>Are certificates issued on the day of training?</h4>
+                    <div class="faq-icon"><i class="fas fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. All delegates who successfully complete their first aid course receive their certificate on the day of training. Certificates are HSE-compliant and recognised by employers across the UK. We also provide a register of attendees and any supporting documentation required for your compliance records.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- COVERAGE GRID -->
+<section class="section-padding" style="background:white;">
+    <div class="container">
+        <div class="coverage-header">
+            <span class="section-tag">Training Regions</span>
+            <h2 class="section-title">Our Coverage Area &amp; Training Locations</h2>
+            <p class="section-subtitle" style="margin:0 auto;">We deliver professional training throughout London, the South East, Midlands, North of England, Scotland, South West and Wales.</p>
+        </div>
+        <div class="coverage-grid">
+            <div class="coverage-region"><h4>Kent</h4><ul><li>Maidstone</li><li>Canterbury</li><li>Ashford</li><li>Tunbridge Wells</li><li>Dover</li></ul></div>
+            <div class="coverage-region"><h4>Sussex</h4><ul><li>Brighton</li><li>Eastbourne</li><li>Hastings</li><li>Crawley</li><li>Worthing</li></ul></div>
+            <div class="coverage-region"><h4>Surrey</h4><ul><li>Guildford</li><li>Woking</li><li>Croydon</li><li>Epsom</li><li>Redhill</li></ul></div>
+            <div class="coverage-region"><h4>London</h4><ul><li>Central London</li><li>South London</li><li>East London</li><li>West London</li><li>North London</li></ul></div>
+            <div class="coverage-region"><h4>Midlands &amp; North</h4><ul><li>Birmingham</li><li>Manchester</li><li>Leeds</li><li>Nottingham</li><li>Sheffield</li></ul></div>
+            <div class="coverage-region"><h4>East of England</h4><ul><li>Norwich</li><li>Cambridge</li><li>Ipswich</li><li>Peterborough</li></ul></div>
+            <div class="coverage-nationwide">
+                <h4><i class="fas fa-globe"></i>&nbsp; Nationwide Coverage</h4>
+                <p>We deliver training anywhere in the UK. Contact us to discuss your location, no matter where you are, our trainers will come to you.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section section-padding" id="contact">
+    <div class="container">
+        <div style="text-align:center;margin-bottom:48px;">
+            <span class="section-tag">Get In Touch</span>
+            <h2 class="section-title">Contact Us Today</h2>
+            <p class="section-subtitle" style="margin:0 auto;">We're here to help. Contact us for expert advice on the right training for your business.</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <p>Ready to discuss your training needs? Our expert team is here to help you find the right solution for your business.</p>
+                <div class="contact-items">
+                    <div class="contact-item">
+                        <div class="contact-item-icon green"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-item-text"><strong>Email</strong><span><a href="mailto:info@accomplishedtraining.co.uk">info@accomplishedtraining.co.uk</a></span></div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon navy"><i class="fas fa-phone-alt"></i></div>
+                        <div class="contact-item-text"><strong>Phone</strong><span><a href="tel:0800XXXXXXX">0800 XXX XXXX</a></span></div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon gold"><i class="fas fa-clock"></i></div>
+                        <div class="contact-item-text"><strong>Hours</strong><span>Mon&ndash;Fri 9:00 AM &ndash; 5:00 PM</span></div>
+                    </div>
+                </div>
+                <div style="margin-top:28px;padding:24px;background:white;border-radius:var(--radius-md);border:1px solid var(--light-gray);">
+                    <h4 style="font-size:0.9rem;font-weight:700;color:var(--navy);margin-bottom:12px;"><i class="fas fa-map-marker-alt" style="color:var(--green);margin-right:8px;"></i>Training Locations</h4>
+                    <p style="font-size:0.85rem;color:var(--gray);line-height:1.6;">We deliver training at your workplace premises, schools and educational facilities, community centres and hired training venues nationwide.</p>
+                </div>
+            </div>
+            <div style="position:relative;min-height:420px;height:100%;overflow:hidden;border:1px solid var(--light-gray);box-shadow:var(--shadow-md);">
+                <iframe
+                    src="https://maps.google.com/maps?q=United+Kingdom&output=embed&z=5"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;display:block;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="ATS Training Coverage, England and Wales">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-main">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="navbar-logo" style="margin-bottom:0;">
+                        <img src="images/ats-logo.svg" alt="Accomplished Training Solutions" style="height:90px;width:auto;display:block;">
+                    </a>
+                    <p>Delivering professional health and safety training across the UK since 2006. Committed to quality, engaging and certified training for businesses of all sizes.</p>
+                    <p style="font-size:0.8rem;color:rgba(255,255,255,0.35);">Service Areas: Nationwide, with focus on Kent, Sussex, Surrey, London and surrounding areas.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="courses.html">Course Catalogue</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="javascript:void(0)">Training Regions</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Popular Courses</h4>
+                    <ul>
+                        <li><a href="courses.html#first-aid">First Aid Training</a></li>
+                        <li><a href="courses.html#fire-safety">Fire Safety Training</a></li>
+                        <li><a href="courses.html#food-safety">Food Hygiene</a></li>
+                        <li><a href="courses.html#health-safety">Manual Handling</a></li>
+                        <li><a href="courses.html#health-safety">Health &amp; Safety</a></li>
+                        <li><a href="courses.html#specialist">Mental Health FA</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:info@accomplishedtraining.co.uk"><i class="fas fa-envelope" style="width:16px;"></i> info@accomplishedtraining.co.uk</a></li>
+                        <li><a href="tel:0800XXXXXXX"><i class="fas fa-phone" style="width:16px;"></i> 0800 XXX XXXX</a></li>
+                        <li><a href="#"><i class="fas fa-clock" style="width:16px;"></i> Mon-Fri: 9am - 5pm</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="container">
+        <div class="footer-bottom">
+            <p>&copy; 2026 Accomplished Training Solutions. All rights reserved. | Established 2006</p>
+            <div class="footer-bottom-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="cookie-policy.html">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

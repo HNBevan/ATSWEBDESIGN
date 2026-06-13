@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Accomplished Training Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/courses.css">
+    <link rel="stylesheet" href="styles/about.css">
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announcement-bar">
+    <i class="fas fa-certificate"></i>&nbsp; HSE Compliant Training | Established 2006 | UK Wide Coverage
+    <a href="#contact">Get a Free Quote Today &rarr;</a>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="navbar-logo">
+            <img src="images/ats-logo.svg" alt="Accomplished Training Solutions" style="height:150px;width:auto;display:block;">
+        </a>
+        <div class="navbar-right">
+            <ul class="navbar-nav">
+                <li><a href="about.html" style="color:var(--green);font-weight:700;">About Us</a></li>
+                <li><a href="courses.html">Course Catalogue</a></li>
+                <li class="nav-item-dropdown">
+                    <a href="javascript:void(0)">Training Regions <i class="fas fa-chevron-down nav-dropdown-arrow"></i></a>
+                    <div class="nav-dropdown-menu">
+                        <a href="london-south-east.html"><i class="fas fa-map-marker-alt"></i> London &amp; South East</a>
+                        <a href="south-west-wales.html"><i class="fas fa-map-marker-alt"></i> South West &amp; Wales</a>
+                        <a href="midlands.html"><i class="fas fa-map-marker-alt"></i> Midlands</a>
+                        <a href="north-england-scotland.html"><i class="fas fa-map-marker-alt"></i> North England &amp; Scotland</a>
+                    </div>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li class="nav-item-dropdown">
+                    <a href="blog.html">Blog <i class="fas fa-chevron-down nav-dropdown-arrow"></i></a>
+                    <div class="nav-dropdown-menu">
+                        <a href="blog.html"><i class="fas fa-th-list"></i> All Blog Posts</a>
+                        <a href="blog-fire-safety-london.html"><i class="fas fa-fire"></i> Fire Safety Training in London</a>
+                        <a href="blog-first-aid-training.html"><i class="fas fa-heart"></i> Why First Aid Training is Crucial</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="navbar-divider"></div>
+            <button class="search-btn" id="searchToggle"><i class="fas fa-search"></i></button>
+            <a href="tel:0800XXXXXXX" class="navbar-phone"><i class="fas fa-phone-alt"></i> 0800 XXX XXXX</a>
+            <a href="#contact" class="btn-primary" style="padding:10px 20px;font-size:0.87rem;margin-left:16px;"><i class="fas fa-file-alt"></i> Free Quote</a>
+        </div>
+        <div class="nav-mobile-right">
+            <button class="search-btn search-btn-mobile" id="searchToggleMobile"><i class="fas fa-search"></i></button>
+            <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </div>
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="Search courses, topics, regions...">
+            <button class="search-close" id="searchClose"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="search-results" id="searchResults"></div>
+        <p class="search-no-results" id="searchNoResults">No results found. Try different keywords.</p>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="about.html" style="color:var(--green);font-weight:700;">About Us</a>
+        <a href="courses.html">Course Catalogue</a>
+        <div class="mob-drop">
+            <button class="mob-drop-btn" id="mobRegionsBtn">Training Regions <i class="fas fa-chevron-down mob-chevron"></i></button>
+            <div class="mob-drop-body" id="mobRegionsBody">
+                <a href="london-south-east.html"><i class="fas fa-map-marker-alt"></i> London &amp; South East</a>
+                <a href="south-west-wales.html"><i class="fas fa-map-marker-alt"></i> South West &amp; Wales</a>
+                <a href="midlands.html"><i class="fas fa-map-marker-alt"></i> Midlands</a>
+                <a href="north-england-scotland.html"><i class="fas fa-map-marker-alt"></i> North England &amp; Scotland</a>
+            </div>
+        </div>
+        <a href="gallery.html">Gallery</a>
+        <a href="testimonials.html">Testimonials</a>
+        <div class="mob-drop">
+            <div class="mob-drop-split">
+                <a href="blog.html">Blog</a>
+                <button class="mob-drop-chevron" id="mobBlogBtn"><i class="fas fa-chevron-down mob-chevron"></i></button>
+            </div>
+            <div class="mob-drop-body" id="mobBlogBody">
+                <a href="blog-fire-safety-london.html"><i class="fas fa-fire"></i> Fire Safety Training in London</a>
+                <a href="blog-first-aid-training.html"><i class="fas fa-heart"></i> Why First Aid Training is Crucial</a>
+            </div>
+        </div>
+        <a href="contact.html">Contact</a>
+        <a href="tel:0800XXXXXXX" style="color:var(--green);font-weight:700;border-bottom:none;"><i class="fas fa-phone-alt"></i> 0800 XXX XXXX</a>
+    </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero" style="padding:72px 0 56px;">
+    <div class="container">
+        <span class="section-tag">About Us</span>
+        <h1>Our Story: 18+ Years of Excellence</h1>
+        <p>Established in 2006, delivering HSE-compliant health and safety training to businesses across the whole of the United Kingdom.</p>
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:28px;">
+            <a href="contact.html" class="btn-primary"><i class="fas fa-envelope"></i> Get In Touch</a>
+            <a href="tel:0800XXXXXXX" class="btn-secondary"><i class="fas fa-phone-alt"></i> Call Us: 0800 XXX XXXX</a>
+        </div>
+    </div>
+</section>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb-bar">
+    <div class="container">
+        <nav class="breadcrumb-nav">
+            <a href="index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>About Us</span>
+        </nav>
+    </div>
+</div>
+
+<!-- OUR STORY -->
+<section class="about-section section-padding" id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-img-container">
+                <img src="images/gallery/training-session-on-site.webp"Accomplished Training Solutions team">
+                <div class="about-stat-card top-right">
+                    <div class="stat-icon green"><i class="fas fa-calendar-check"></i></div>
+                    <div class="stat-text"><strong>Est. 2006</strong><span>18+ Years Trading</span></div>
+                </div>
+                <div class="about-stat-card bottom-left">
+                    <div class="stat-icon navy"><i class="fas fa-users"></i></div>
+                    <div class="stat-text"><strong>10,000+</strong><span>Students Trained</span></div>
+                </div>
+            </div>
+            <div class="about-right">
+                <span class="section-tag">Our Story</span>
+                <h2 class="section-title">18+ Years of Excellence in Health &amp; Safety Training</h2>
+                <p class="section-subtitle">Established in 2006, Accomplished Training Solutions has been at the forefront of health and safety training across the United Kingdom for over 18 years. Based in Kent, we've grown from a local training provider to a trusted nationwide service, delivering HSE-compliant courses to businesses in every corner of the UK.</p>
+                <p class="section-subtitle" style="margin-top:16px;">What started as a commitment to providing quality workplace safety training has evolved into a comprehensive training solution serving thousands of businesses across retail, construction, healthcare, education, hospitality, and corporate sectors. <a href="testimonials.html" style="color:var(--green-pale);font-weight:600;">See what our clients say.</a></p>
+                <p class="section-subtitle" style="margin-top:16px;">Our longevity in the industry isn't just about years in business. It's about consistent quality, unwavering commitment to compliance and a genuine passion for keeping workplaces safe across the United Kingdom.</p>
+                <div class="about-stats">
+                    <div class="about-stat-item">
+                        <div class="about-stat-num">18+</div>
+                        <div class="about-stat-lbl">Years Established</div>
+                    </div>
+                    <div class="about-stat-item">
+                        <div class="about-stat-num">10,000+</div>
+                        <div class="about-stat-lbl">Students Trained</div>
+                    </div>
+                    <div class="about-stat-item">
+                        <div class="about-stat-num">500+</div>
+                        <div class="about-stat-lbl">Businesses Served</div>
+                    </div>
+                </div>
+                <div class="expert-card">
+                    <div class="testimonial-avatar" style="width:56px;height:56px;font-size:1.1rem;flex-shrink:0;">ATS</div>
+                    <div class="expert-info">
+                        <h4>Accomplished Training Solutions</h4>
+                        <p>Kent-based, delivering nationwide since 2006</p>
+                        <a href="tel:0800XXXXXXX"><i class="fas fa-phone-alt" style="margin-right:6px;"></i>0800 XXX XXXX</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- REAL EXPERIENCE -->
+<section class="why-section section-padding">
+    <div class="container">
+        <div class="why-header">
+            <span class="section-tag">Real Experience, Real Expertise</span>
+            <h2 class="section-title">Led by a Trainer Who's Worked in the Field</h2>
+            <p class="section-subtitle" style="margin:0 auto;">Our lead trainer has worked in several of the roles he now teaches, bringing authentic real-world experience to every course.</p>
+        </div>
+        <div class="why-grid">
+            <div class="why-card anim-card">
+                <div class="why-icon blue"><i class="fas fa-hard-hat"></i></div>
+                <h3>Industry Experience</h3>
+                <p>Our lead trainer has worked in several of the roles he now teaches, bringing authentic real-world experience to every course. This hands-on background ensures training that's practical and immediately applicable to your workplace.</p>
+            </div>
+            <div class="why-card anim-card">
+                <div class="why-icon green"><i class="fas fa-tools"></i></div>
+                <h3>Practical Knowledge</h3>
+                <p>With direct experience in key health and safety roles, our trainer understands the real challenges your employees face. Training goes beyond theory to deliver practical solutions, from <a href="blog-first-aid-training.html">first aid</a> to <a href="blog-fire-safety-london.html">fire safety</a>, that work in actual workplace situations.</p>
+            </div>
+            <div class="why-card anim-card">
+                <div class="why-icon gold"><i class="fas fa-award"></i></div>
+                <h3>18+ Years Training</h3>
+                <p>Since 2006, we've delivered training across all major sectors including retail, construction, healthcare, hospitality and corporate. This extensive experience means we understand your industry's specific challenges and requirements. <a href="testimonials.html" style="color:var(--green);font-weight:600;">Read our testimonials.</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TRAINING IN ACTION -->
+<section class="section-padding" style="background:var(--off-white);">
+    <div class="container">
+        <div class="about-training-grid">
+            <div style="position:relative;overflow:hidden;">
+                <img src="images/gallery/training-in-action-extinguisher-training.webp" alt="Trainees and instructor on an Accomplished Training Solutions course" style="width:100%;height:380px;object-fit:cover;display:block;">
+            </div>
+            <div>
+                <span class="section-tag">Training In Action</span>
+                <h2 class="section-title">See Our Training in Action</h2>
+                <p style="font-size:1rem;color:var(--gray);line-height:1.7;margin-bottom:24px;">Every course we deliver is hands-on, engaging and tailored to the real environment your team works in. From emergency first aid and fire safety drills to manual handling and food hygiene, our training is built around practical outcomes.</p>
+                <p style="font-size:1rem;color:var(--gray);line-height:1.7;margin-bottom:32px;">Browse our gallery to see Accomplished Training Solutions courses in action across businesses, schools, healthcare settings and construction sites throughout the UK.</p>
+                <a href="gallery.html" class="btn-primary"><i class="fas fa-images"></i> View Our Gallery</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FULLY COMPLIANT -->
+<section class="compliance-section section-padding">
+    <div class="container">
+        <div class="compliance-grid">
+            <div>
+                <div class="compliance-badges">
+                    <div class="compliance-badge">
+                        <i class="fas fa-shield-alt"></i>
+                        <div class="compliance-badge-text">
+                            <strong>HSE Compliant</strong>
+                            <span>All courses meet HSE requirements</span>
+                        </div>
+                    </div>
+                    <div class="compliance-badge">
+                        <i class="fas fa-certificate"></i>
+                        <div class="compliance-badge-text">
+                            <strong>Nationally Recognised</strong>
+                            <span>Accepted by insurers &amp; regulators</span>
+                        </div>
+                    </div>
+                    <div class="compliance-badge">
+                        <i class="fas fa-file-alt"></i>
+                        <div class="compliance-badge-text">
+                            <strong>Same-Day Certificates</strong>
+                            <span>Issued on the day, valid 3 years</span>
+                        </div>
+                    </div>
+                    <div class="compliance-badge">
+                        <i class="fas fa-gavel"></i>
+                        <div class="compliance-badge-text">
+                            <strong>Legal Peace of Mind</strong>
+                            <span>Full due diligence compliance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="compliance-right">
+                <span class="section-tag" style="background:rgba(255,255,255,0.15);color:white;border-color:rgba(255,255,255,0.3);">Fully Compliant, Legally Certified</span>
+                <h2 class="section-title" style="color:white;margin-top:8px;">HSE Compliance &amp; Recognised Certifications</h2>
+                <p style="color:rgba(255,255,255,0.75);font-size:0.95rem;line-height:1.7;margin-bottom:16px;">All our training courses are fully compliant with Health and Safety Executive (HSE) requirements and current UK legislation. We stay up to date with every regulatory change to ensure your business meets its legal obligations.</p>
+                <p style="color:rgba(255,255,255,0.75);font-size:0.95rem;line-height:1.7;margin-bottom:16px;">Our certifications are recognised nationwide and accepted by insurers, regulatory bodies, and during workplace inspections. Certificates are issued on the day of training. <a href="contact.html" style="color:var(--green-pale);font-weight:600;">Get in touch to book your training.</a></p>
+                <p style="color:rgba(255,255,255,0.75);font-size:0.9rem;margin-bottom:12px;font-weight:600;">With Accomplished Training Solutions, you comply with:</p>
+                <ul class="compliance-list">
+                    <li><i class="fas fa-check-circle"></i> Health and Safety at Work Act 1974</li>
+                    <li><i class="fas fa-check-circle"></i> Management of Health and Safety at Work Regulations 1999</li>
+                    <li><i class="fas fa-check-circle"></i> Regulatory Reform (Fire Safety) Order 2005</li>
+                    <li><i class="fas fa-check-circle"></i> Manual Handling Operations Regulations 1992</li>
+                    <li><i class="fas fa-check-circle"></i> Food Safety Act 1990</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- OUR TRAINING COURSES -->
+<section class="section-padding" style="background:white;">
+    <div class="container">
+        <div class="courses-header">
+            <span class="section-tag">Our Training Courses</span>
+            <h2 class="section-title">Training Covered All Over the UK</h2>
+            <p class="section-subtitle" style="margin:0 auto;">Professional, HSE-compliant <a href="courses.html">training courses</a> delivered on-site at your premises across every region of the United Kingdom, including <a href="london-south-east.html">London and South East</a>, <a href="midlands.html">Midlands</a>, <a href="south-west-wales.html">South West and Wales</a>, and <a href="north-england-scotland.html">North England and Scotland</a>.</p>
+        </div>
+        <div class="about-courses-grid">
+            <div class="sector-card anim-card">
+                <img src="images/first-aid.webp" alt="First aid training course in progress at UK workplace">
+                <div class="sector-overlay">
+                    <span class="sector-icon"><i class="fas fa-first-aid"></i></span>
+                    <h4>First Aid</h4>
+                </div>
+            </div>
+            <div class="sector-card anim-card">
+                <img src="images/fire-warden-training.webp" alt="Fire safety training demonstration with extinguisher">
+                <div class="sector-overlay">
+                    <span class="sector-icon"><i class="fas fa-fire-extinguisher"></i></span>
+                    <h4>Fire Safety Training</h4>
+                </div>
+            </div>
+            <div class="sector-card anim-card">
+                <img src="images/health-and-safety-coporate.webp" alt="Manual handling training session showing proper lifting techniques">
+                <div class="sector-overlay">
+                    <span class="sector-icon"><i class="fas fa-hands-helping"></i></span>
+                    <h4>Manual Handling</h4>
+                </div>
+            </div>
+            <div class="sector-card anim-card">
+                <img src="images/food-hygiene.webp" alt="Food safety and hygiene training for hospitality staff">
+                <div class="sector-overlay">
+                    <span class="sector-icon"><i class="fas fa-utensils"></i></span>
+                    <h4>Food Safety Training</h4>
+                </div>
+            </div>
+            <div class="sector-card anim-card">
+                <img src="images/coporate.webp" alt="On-site health and safety training at corporate office">
+                <div class="sector-overlay">
+                    <span class="sector-icon"><i class="fas fa-building"></i></span>
+                    <h4>On-Site Corporate Training</h4>
+                </div>
+            </div>
+            <div class="sector-card anim-card">
+                <img src="images/disability-discrimination-awareness-card.webp" alt="Health and safety training for construction industry workers" style="object-position:left center;">
+                <div class="sector-overlay">
+                    <span class="sector-icon"><i class="fas fa-hard-hat"></i></span>
+                    <h4>Construction Site Training</h4>
+                </div>
+            </div>
+        </div>
+        <div style="text-align:center;margin-top:36px;">
+            <a href="courses.html" class="btn-primary"><i class="fas fa-list"></i> View Full Course Catalogue</a>
+        </div>
+    </div>
+</section>
+
+<!-- NATIONWIDE COVERAGE -->
+<section class="section-padding" style="background:var(--off-white);" id="coverage">
+    <div class="container">
+        <div class="about-coverage-grid">
+            <div>
+                <span class="section-tag">Nationwide UK Coverage</span>
+                <h2 class="section-title">We Come to You</h2>
+                <p style="font-size:1rem;color:var(--gray);line-height:1.7;margin-bottom:24px;">No matter where your business is located in the UK, we deliver professional health and safety training directly to your premises. From the Scottish Highlands to Cornwall, from Wales to East Anglia, we cover every region.</p>
+                <h3 style="font-family:var(--font-display);font-size:1.1rem;color:var(--navy);margin-bottom:16px;">On-Site Training Benefits</h3>
+                <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:32px;">
+                    <li style="display:flex;align-items:flex-start;gap:12px;font-size:0.92rem;color:var(--dark-gray);"><span style="color:var(--green);font-weight:700;flex-shrink:0;">&#10003;</span><span><strong>No Travel Time:</strong> We come to you, saving your staff valuable time</span></li>
+                    <li style="display:flex;align-items:flex-start;gap:12px;font-size:0.92rem;color:var(--dark-gray);"><span style="color:var(--green);font-weight:700;flex-shrink:0;">&#10003;</span><span><strong>Minimal Disruption:</strong> Training fits around your business operations</span></li>
+                    <li style="display:flex;align-items:flex-start;gap:12px;font-size:0.92rem;color:var(--dark-gray);"><span style="color:var(--green);font-weight:700;flex-shrink:0;">&#10003;</span><span><strong>Familiar Environment:</strong> Staff train in their actual workplace</span></li>
+                    <li style="display:flex;align-items:flex-start;gap:12px;font-size:0.92rem;color:var(--dark-gray);"><span style="color:var(--green);font-weight:700;flex-shrink:0;">&#10003;</span><span><strong>Cost Effective:</strong> No venue hire or travel expenses</span></li>
+                    <li style="display:flex;align-items:flex-start;gap:12px;font-size:0.92rem;color:var(--dark-gray);"><span style="color:var(--green);font-weight:700;flex-shrink:0;">&#10003;</span><span><strong>Group Training:</strong> Train multiple staff simultaneously for better value</span></li>
+                </ul>
+                <a href="contact.html" class="btn-primary"><i class="fas fa-file-alt"></i> Request a Quote</a>
+            </div>
+            <div>
+                <div class="about-stat-grid">
+                    <div class="about-stat-item" style="background:var(--navy);border-color:var(--navy);">
+                        <div class="about-stat-num">18+</div>
+                        <div class="about-stat-lbl">Years Established</div>
+                    </div>
+                    <div class="about-stat-item" style="background:var(--navy);border-color:var(--navy);">
+                        <div class="about-stat-num">10,000+</div>
+                        <div class="about-stat-lbl">Students Trained</div>
+                    </div>
+                    <div class="about-stat-item" style="background:var(--navy);border-color:var(--navy);">
+                        <div class="about-stat-num">500+</div>
+                        <div class="about-stat-lbl">Businesses Served</div>
+                    </div>
+                    <div class="about-stat-item" style="background:var(--navy);border-color:var(--navy);">
+                        <div class="about-stat-num">100%</div>
+                        <div class="about-stat-lbl">HSE Compliant</div>
+                    </div>
+                </div>
+                <img src="images/uk-coverage.webp" alt="UK nationwide training coverage" style="width:100%;height:220px;object-fit:cover;display:block;">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHY BUSINESSES TRUST US -->
+<section class="why-section section-padding">
+    <div class="container">
+        <div class="why-header">
+            <span class="section-tag">Why Choose Us</span>
+            <h2 class="section-title">Why Businesses Trust Accomplished Training</h2>
+        </div>
+        <div class="why-grid">
+            <div class="why-card anim-card">
+                <div class="why-icon blue"><i class="fas fa-user-tie"></i></div>
+                <h3>Real World Experience</h3>
+                <p>Our lead trainer has worked in several of the roles he teaches, bringing authentic practical expertise to every course.</p>
+            </div>
+            <div class="why-card anim-card">
+                <div class="why-icon green"><i class="fas fa-star"></i></div>
+                <h3>18+ Years Established</h3>
+                <p>Since 2006, we've built a reputation for quality, reliability, and professionalism. <a href="testimonials.html" style="color:var(--green);font-weight:600;">Read our reviews.</a></p>
+            </div>
+            <div class="why-card anim-card">
+                <div class="why-icon gold"><i class="fas fa-shield-alt"></i></div>
+                <h3>Fully Compliant</h3>
+                <p>All courses meet HSE requirements and current UK health and safety legislation, keeping your business legally protected.</p>
+            </div>
+            <div class="why-card anim-card">
+                <div class="why-icon teal"><i class="fas fa-map-marker-alt"></i></div>
+                <h3>Nationwide Service</h3>
+                <p>Training delivered across the whole of the UK, directly to your workplace. <a href="contact.html" style="color:var(--green);font-weight:600;">Request a quote.</a></p>
+            </div>
+            <div class="why-card anim-card">
+                <div class="why-icon purple"><i class="fas fa-industry"></i></div>
+                <h3>Sector Experience</h3>
+                <p>18+ years delivering first aid, fire safety, health &amp; safety, and more across retail, construction, healthcare, hospitality, and corporate sectors.</p>
+            </div>
+            <div class="why-card anim-card">
+                <div class="why-icon red"><i class="fas fa-pencil-ruler"></i></div>
+                <h3>Bespoke Training</h3>
+                <p>We tailor our courses to your specific industry, workplace and team requirements. <a href="contact.html" style="color:var(--green);font-weight:600;">Talk to us today.</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section section-padding">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to Work With Us?</h2>
+            <p>Get a quote within 24 hours. Expert advice on health and safety training and compliance.</p>
+            <div class="cta-actions">
+                <a href="contact.html" class="btn-primary"><i class="fas fa-file-alt"></i> Get a Free Quote</a>
+                <div class="cta-phone">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Call: <a href="tel:0800XXXXXXX">0800 XXX XXXX</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- COVERAGE GRID -->
+<section class="section-padding" style="background:white;" id="coverage-map">
+    <div class="container">
+        <div class="coverage-header">
+            <span class="section-tag">Training Regions</span>
+            <h2 class="section-title">Our Coverage Area &amp; Training Locations</h2>
+            <p class="section-subtitle" style="margin:0 auto;">We deliver professional training throughout <a href="london-south-east.html">London and the South East</a>, <a href="midlands.html">Midlands</a>, <a href="north-england-scotland.html">North of England and Scotland</a>, and <a href="south-west-wales.html">South West and Wales</a>.</p>
+        </div>
+        <div class="coverage-grid">
+            <div class="coverage-region"><h4>Kent</h4><ul><li>Maidstone</li><li>Canterbury</li><li>Ashford</li><li>Tunbridge Wells</li><li>Dover</li></ul></div>
+            <div class="coverage-region"><h4>Sussex</h4><ul><li>Brighton</li><li>Eastbourne</li><li>Hastings</li><li>Crawley</li><li>Worthing</li></ul></div>
+            <div class="coverage-region"><h4>Surrey</h4><ul><li>Guildford</li><li>Woking</li><li>Croydon</li><li>Epsom</li><li>Redhill</li></ul></div>
+            <div class="coverage-region"><h4>London</h4><ul><li>Central London</li><li>South London</li><li>East London</li><li>West London</li><li>North London</li></ul></div>
+            <div class="coverage-region"><h4>Midlands &amp; North</h4><ul><li>Birmingham</li><li>Manchester</li><li>Leeds</li><li>Nottingham</li><li>Sheffield</li></ul></div>
+            <div class="coverage-region"><h4>East of England</h4><ul><li>Norwich</li><li>Cambridge</li><li>Ipswich</li><li>Peterborough</li></ul></div>
+            <div class="coverage-nationwide">
+                <h4>Nationwide Coverage</h4>
+                <p>We deliver professional health and safety training anywhere in the United Kingdom. Contact us to arrange training at your premises.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTORS -->
+<section class="section-padding" style="background:var(--off-white);">
+    <div class="container">
+        <div class="sectors-header">
+            <span class="section-tag">Industries</span>
+            <h2 class="section-title">Sectors We Serve</h2>
+            <p class="section-subtitle" style="margin:0 auto;">Tailored health and safety training for businesses across all industries.</p>
+        </div>
+        <div class="sectors-alt-grid">
+            <div class="sectors-alt-card"><div class="sectors-alt-icon"><i class="fas fa-shopping-cart"></i></div><div><h4>Retail</h4><p>Stores, supermarkets &amp; warehouses</p></div></div>
+            <div class="sectors-alt-card"><div class="sectors-alt-icon"><i class="fas fa-school"></i></div><div><h4>Schools &amp; Education</h4><p>Schools, colleges &amp; universities</p></div></div>
+            <div class="sectors-alt-card"><div class="sectors-alt-icon"><i class="fas fa-hard-hat"></i></div><div><h4>Construction</h4><p>Building sites &amp; contractors</p></div></div>
+            <div class="sectors-alt-card"><div class="sectors-alt-icon"><i class="fas fa-utensils"></i></div><div><h4>Hospitality</h4><p>Restaurants, hotels &amp; catering</p></div></div>
+            <div class="sectors-alt-card"><div class="sectors-alt-icon"><i class="fas fa-heartbeat"></i></div><div><h4>Healthcare</h4><p>Care homes, clinics &amp; NHS</p></div></div>
+            <div class="sectors-alt-card"><div class="sectors-alt-icon"><i class="fas fa-briefcase"></i></div><div><h4>Offices &amp; Corporate</h4><p>All commercial business sectors</p></div></div>
+        </div>
+        <div style="text-align:center;margin-top:36px;">
+            <a href="courses.html" class="btn-primary">View All Our Courses</a>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section section-padding" id="contact">
+    <div class="container">
+        <div style="text-align:center;margin-bottom:48px;">
+            <span class="section-tag">Get In Touch</span>
+            <h2 class="section-title">Contact Us Today</h2>
+            <p class="section-subtitle" style="margin:0 auto;">We're here to help. Contact us for expert advice on the right training for your business.</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <p>Ready to discuss your training needs? Our expert team is here to help you find the right solution for your business.</p>
+                <div class="contact-items">
+                    <div class="contact-item">
+                        <div class="contact-item-icon green"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-item-text"><strong>Email</strong><span><a href="mailto:info@accomplishedtraining.co.uk">info@accomplishedtraining.co.uk</a></span></div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon navy"><i class="fas fa-phone-alt"></i></div>
+                        <div class="contact-item-text"><strong>Phone</strong><span><a href="tel:0800XXXXXXX">0800 XXX XXXX</a></span></div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon gold"><i class="fas fa-clock"></i></div>
+                        <div class="contact-item-text"><strong>Hours</strong><span>Mon&ndash;Fri 9:00 AM &ndash; 5:00 PM</span></div>
+                    </div>
+                </div>
+                <div style="margin-top:28px;padding:24px;background:white;border-radius:var(--radius-md);border:1px solid var(--light-gray);">
+                    <h4 style="font-size:0.9rem;font-weight:700;color:var(--navy);margin-bottom:12px;"><i class="fas fa-map-marker-alt" style="color:var(--green);margin-right:8px;"></i>Training Locations</h4>
+                    <p style="font-size:0.85rem;color:var(--gray);line-height:1.6;">We deliver training at your workplace premises, schools and educational facilities, community centres and hired training venues nationwide.</p>
+                </div>
+            </div>
+            <div style="position:relative;min-height:420px;height:100%;overflow:hidden;border:1px solid var(--light-gray);box-shadow:var(--shadow-md);">
+                <iframe
+                    src="https://maps.google.com/maps?q=United+Kingdom&output=embed&z=5"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;display:block;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="ATS Training Coverage, England and Wales">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-main">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="navbar-logo" style="margin-bottom:0;">
+                        <img src="images/ats-logo.svg" alt="Accomplished Training Solutions" style="height:90px;width:auto;display:block;">
+                    </a>
+                    <p>Delivering professional health and safety training across the UK since 2006. Committed to quality, engaging and certified training for businesses of all sizes.</p>
+                    <p style="font-size:0.8rem;color:rgba(255,255,255,0.35);">Service Areas: Nationwide, with focus on Kent, Sussex, Surrey, London and surrounding areas.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="courses.html">Course Catalogue</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="javascript:void(0)">Training Regions</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Popular Courses</h4>
+                    <ul>
+                        <li><a href="courses.html#first-aid">First Aid Training</a></li>
+                        <li><a href="courses.html#fire-safety">Fire Safety Training</a></li>
+                        <li><a href="courses.html#food-safety">Food Hygiene</a></li>
+                        <li><a href="courses.html#health-safety">Manual Handling</a></li>
+                        <li><a href="courses.html#health-safety">Health &amp; Safety</a></li>
+                        <li><a href="courses.html#specialist">Mental Health FA</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:info@accomplishedtraining.co.uk"><i class="fas fa-envelope" style="width:16px;"></i> info@accomplishedtraining.co.uk</a></li>
+                        <li><a href="tel:0800XXXXXXX"><i class="fas fa-phone" style="width:16px;"></i> 0800 XXX XXXX</a></li>
+                        <li><a href="#"><i class="fas fa-clock" style="width:16px;"></i> Mon-Fri: 9am - 5pm</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="container">
+        <div class="footer-bottom">
+            <p>&copy; 2026 Accomplished Training Solutions. All rights reserved. | Established 2006</p>
+            <div class="footer-bottom-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="cookie-policy.html">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

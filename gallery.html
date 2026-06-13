@@ -1,0 +1,465 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Accomplished Training Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announcement-bar">
+    <i class="fas fa-certificate"></i>&nbsp; HSE Compliant Training | Established 2006 | UK Wide Coverage
+    <a href="index.html#get-quote">Get a Free Quote Today &rarr;</a>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="navbar-logo">
+            <img src="images/ats-logo.svg" alt="Accomplished Training Solutions" style="height:150px;width:auto;display:block;">
+        </a>
+        <div class="navbar-right">
+            <ul class="navbar-nav">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses.html">Course Catalogue</a></li>
+                <li class="nav-item-dropdown">
+                    <a href="javascript:void(0)">Training Regions <i class="fas fa-chevron-down nav-dropdown-arrow"></i></a>
+                    <div class="nav-dropdown-menu">
+                        <a href="london-south-east.html"><i class="fas fa-map-marker-alt"></i> London &amp; South East</a>
+                        <a href="south-west-wales.html"><i class="fas fa-map-marker-alt"></i> South West &amp; Wales</a>
+                        <a href="midlands.html"><i class="fas fa-map-marker-alt"></i> Midlands</a>
+                        <a href="north-england-scotland.html"><i class="fas fa-map-marker-alt"></i> North England &amp; Scotland</a>
+                    </div>
+                </li>
+                <li><a href="gallery.html" style="color:var(--green);font-weight:700;">Gallery</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li class="nav-item-dropdown">
+                    <a href="blog.html">Blog <i class="fas fa-chevron-down nav-dropdown-arrow"></i></a>
+                    <div class="nav-dropdown-menu">
+                        <a href="blog.html"><i class="fas fa-th-list"></i> All Blog Posts</a>
+                        <a href="blog-fire-safety-london.html"><i class="fas fa-fire"></i> Fire Safety Training in London</a>
+                        <a href="blog-first-aid-training.html"><i class="fas fa-heart"></i> Why First Aid Training is Crucial</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="navbar-divider"></div>
+            <button class="search-btn" id="searchToggle" aria-label="Search"><i class="fas fa-search"></i></button>
+            <div class="navbar-divider"></div>
+            <a href="tel:0800XXXXXXX" class="navbar-phone"><i class="fas fa-phone-alt"></i> 0800 XXX XXXX</a>
+            <a href="index.html#get-quote" class="btn-primary" style="padding:10px 20px;font-size:0.87rem;margin-left:16px;"><i class="fas fa-file-alt"></i> Free Quote</a>
+        </div>
+        <div class="nav-mobile-right">
+            <button class="search-btn search-btn-mobile" id="searchToggleMobile"><i class="fas fa-search"></i></button>
+            <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </div>
+
+    <!-- Search dropdown -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="Search courses, topics, regions..." autocomplete="off">
+            <button class="search-close" id="searchClose"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="search-results" id="searchResults"></div>
+        <div class="search-no-results" id="searchNoResults">No results found. Try a different search term.</div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="about.html">About Us</a>
+        <a href="courses.html">Course Catalogue</a>
+        <div class="mob-drop">
+            <button class="mob-drop-btn" id="mobRegionsBtn">Training Regions <i class="fas fa-chevron-down mob-chevron"></i></button>
+            <div class="mob-drop-body" id="mobRegionsBody">
+                <a href="london-south-east.html"><i class="fas fa-map-marker-alt"></i> London &amp; South East</a>
+                <a href="south-west-wales.html"><i class="fas fa-map-marker-alt"></i> South West &amp; Wales</a>
+                <a href="midlands.html"><i class="fas fa-map-marker-alt"></i> Midlands</a>
+                <a href="north-england-scotland.html"><i class="fas fa-map-marker-alt"></i> North England &amp; Scotland</a>
+            </div>
+        </div>
+        <a href="gallery.html">Gallery</a>
+        <a href="testimonials.html">Testimonials</a>
+        <div class="mob-drop">
+            <div class="mob-drop-split">
+                <a href="blog.html">Blog</a>
+                <button class="mob-drop-chevron" id="mobBlogBtn"><i class="fas fa-chevron-down mob-chevron"></i></button>
+            </div>
+            <div class="mob-drop-body" id="mobBlogBody">
+                <a href="blog-fire-safety-london.html"><i class="fas fa-fire"></i> Fire Safety Training in London</a>
+                <a href="blog-first-aid-training.html"><i class="fas fa-heart"></i> Why First Aid Training is Crucial</a>
+            </div>
+        </div>
+        <a href="contact.html">Contact</a>
+        <a href="tel:0800XXXXXXX" style="color:var(--green);font-weight:700;border-bottom:none;"><i class="fas fa-phone-alt"></i> 0800 XXX XXXX</a>
+    </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+    <div class="page-hero-content">
+        <span>Our Gallery</span>
+        <h1>Training In Action</h1>
+        <p>A look at our professional on-site <a href="courses.html">training courses</a> delivered across the UK. See <a href="testimonials.html">what our clients say</a> about working with us.</p>
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:28px;">
+            <a href="index.html#contact" class="btn-primary"><i class="fas fa-envelope"></i> Get In Touch</a>
+            <a href="tel:0800XXXXXXX" class="btn-secondary"><i class="fas fa-phone-alt"></i> Call Us: 0800 XXX XXXX</a>
+        </div>
+    </div>
+</div>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb-bar">
+    <div class="container">
+        <nav class="breadcrumb-nav">
+            <a href="index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Gallery</span>
+        </nav>
+    </div>
+</div>
+
+<!-- FILTER BAR -->
+<div class="filter-bar">
+    <div class="filter-inner">
+        <button class="filter-btn active" data-filter="all">All Photos</button>
+        <button class="filter-btn" data-filter="first-aid">First Aid</button>
+        <button class="filter-btn" data-filter="fire-safety">Fire Safety</button>
+        <button class="filter-btn" data-filter="health-safety">Health &amp; Safety</button>
+        <button class="filter-btn" data-filter="food-safety">Food Safety</button>
+        <button class="filter-btn" data-filter="workplace">Workplace</button>
+    </div>
+</div>
+
+<!-- GALLERY -->
+<section class="gallery-section">
+    <div class="container">
+        <div class="gallery-grid" id="galleryGrid">
+
+            <div class="gallery-item wide" data-category="workplace" data-caption="Professional on-site training session">
+                <img src="images/gallery/trainees-in-training-on-site.webp" alt="Training session">
+                <div class="gallery-item-overlay">
+                    <i class="fas fa-expand-alt gallery-item-icon"></i>
+                    <span class="gallery-item-label">On-site Training</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="fire-safety" data-caption="Fire safety training">
+                <img src="images/gallery/extinguisher-fire-training.webp" alt="Fire Safety Training">
+                <div class="gallery-item-overlay">
+                    <i class="fas fa-expand-alt gallery-item-icon"></i>
+                    <span class="gallery-item-label">Fire Safety</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="first-aid" data-caption="CPR and emergency first aid practice">
+                <img src="images/gallery/first-aid-trainer-demostrating-part-of-first-aid-course.webp" alt="First aid training">
+                <div class="gallery-item-overlay">
+                    <i class="fas fa-expand-alt gallery-item-icon"></i>
+                    <span class="gallery-item-label">First Aid</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="first-aid" data-caption="First aid training session with manikin practice">
+                <img src="images/gallery/first-aid-training-course.webp" alt="First Aid Training">
+                <div class="gallery-item-overlay">
+                    <i class="fas fa-expand-alt gallery-item-icon"></i>
+                    <span class="gallery-item-label">First Aid</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="first-aid" data-caption="First aid trainees in session">
+                <img src="images/gallery/first-aid-training-trainees.webp" alt="First Aid Training">
+                <div class="gallery-item-overlay">
+                    <i class="fas fa-expand-alt gallery-item-icon"></i>
+                    <span class="gallery-item-label">First Aid</span>
+                </div>
+            </div>
+
+            <div class="gallery-item wide" data-category="fire-safety" data-caption="Fire safety training session">
+                <img src="images/gallery/theory-fire-safety-training.webp" alt="fire safety training">
+                <div class="gallery-item-overlay">
+                    <i class="fas fa-expand-alt gallery-item-icon"></i>
+                    <span class="gallery-item-label">Fire Safety</span>
+                </div>
+            </div>
+
+            <div class="gallery-item wide" data-category="first-aid" data-caption="First aid training">
+                <img src="images/gallery/training-dummy-of-first-aid-training.webp" alt="First Aid Training">
+                <div class="gallery-item-overlay">
+                    <i class="fas fa-expand-alt gallery-item-icon"></i>
+                    <span class="gallery-item-label">First Aid</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="first-aid" data-caption="First Aid Training">
+                <img src="images/gallery/trainee-completing-part-of-first-aid-training.webp" alt="First Aid Training">
+                <div class="gallery-item-overlay">
+                    <i class="fas fa-expand-alt gallery-item-icon"></i>
+                    <span class="gallery-item-label">First Aid</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="workplace" data-caption="Trainer delivering on-site course">
+                <img src="images/gallery/trainees-and-instructure-on-a-training-course.webp" alt="workplace training">
+                <div class="gallery-item-overlay">
+                    <i class="fas fa-expand-alt gallery-item-icon"></i>
+                    <span class="gallery-item-label">On-site Training</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="first-aid" data-caption="First aid training session">
+                <img src="images/gallery/trainees-in-first-aid-training.webp" alt="First Aid Training">
+                <div class="gallery-item-overlay">
+                    <i class="fas fa-expand-alt gallery-item-icon"></i>
+                    <span class="gallery-item-label">First Aid</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="first-aid" data-caption="First aid training">
+                <img src="images/gallery/trainees-in-action-first-aid-training.webp" alt="First Aid Training">
+                <div class="gallery-item-overlay">
+                    <i class="fas fa-expand-alt gallery-item-icon"></i>
+                    <span class="gallery-item-label">First Aid</span>
+                </div>
+            </div>
+
+            <div class="gallery-item wide" data-category="fire-safety" data-caption="Fire safety training">
+                <img src="images/gallery/training-fire-safety.webp" alt="Fire Safety Training">
+                <div class="gallery-item-overlay">
+                    <i class="fas fa-expand-alt gallery-item-icon"></i>
+                    <span class="gallery-item-label">Fire Safety</span>
+                </div>
+            </div>
+            
+
+            <div class="gallery-item wide" data-category="fire-safety" data-caption="Fire safety training">
+                <img src="images/gallery/Training-desk-fire-safety-training.webp" alt="Fire Safety Training">
+                <div class="gallery-item-overlay">
+                    <i class="fas fa-expand-alt gallery-item-icon"></i>
+                    <span class="gallery-item-label">Fire Safety</span>
+                </div>
+            </div>
+
+              <div class="gallery-item" data-category="fire-safety" data-caption="Fire safety training">
+                <img src="images/gallery/training-fire-safety-in-action.webp" alt="Fire Safety Training">
+                <div class="gallery-item-overlay">
+                    <i class="fas fa-expand-alt gallery-item-icon"></i>
+                    <span class="gallery-item-label">Fire Safety</span>
+                </div>
+            </div>
+
+              <div class="gallery-item" data-category="first-aid" data-caption="First aid training">
+                <img src="images/gallery/training-first-aid.webp" alt="First Aid Training">
+                <div class="gallery-item-overlay">
+                    <i class="fas fa-expand-alt gallery-item-icon"></i>
+                    <span class="gallery-item-label">First Aid</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="fire-safety" data-caption="Fire safety training">
+                <img src="images/gallery/training-in-action-extinguisher-training.webp" alt="Fire Safety Training">
+                <div class="gallery-item-overlay">
+                    <i class="fas fa-expand-alt gallery-item-icon"></i>
+                    <span class="gallery-item-label">Fire Safety</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="workplace" data-caption="Workplace safety training">
+                <img src="images/gallery/training-session-on-site.webp" alt="On-site Training">
+                <div class="gallery-item-overlay">
+                    <i class="fas fa-expand-alt gallery-item-icon"></i>
+                    <span class="gallery-item-label">On-site Training</span>
+                </div>
+            </div>
+
+             <div class="gallery-item wide" data-category="first-aid" data-caption="First aid training">
+                <img src="images/gallery/training-trainees-first-aid-in-action.webp" alt="First Aid Training">
+                <div class="gallery-item-overlay">
+                    <i class="fas fa-expand-alt gallery-item-icon"></i>
+                    <span class="gallery-item-label">First Aid</span>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+    <button class="lightbox-prev" id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+    <button class="lightbox-next" id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+    <div class="lightbox-counter" id="lightboxCounter"></div>
+</div>
+
+<!-- CTA -->
+<div class="gallery-cta">
+    <h2>Ready to Book Your Training?</h2>
+    <p>Get expert, HSE-compliant <a href="courses.html">training courses</a> delivered on-site at your premises anywhere in the UK. We cover <a href="blog-first-aid-training.html">first aid training</a> and <a href="blog-fire-safety-london.html">fire safety training</a>. <a href="contact.html">Contact us</a> for a free quote.</p>
+    <a href="contact.html" class="btn-primary" style="font-size:1rem;padding:14px 32px;"><i class="fas fa-file-alt"></i> Get a Free Quote</a>
+</div>
+
+<!-- SECTORS -->
+<section class="section-padding" style="background:var(--off-white);">
+    <div class="container">
+        <div class="sectors-header">
+            <span class="section-tag">Industries</span>
+            <h2 class="section-title">Sectors We Serve</h2>
+            <p class="section-subtitle" style="margin:0 auto;">Tailored health and safety training for businesses across all industries.</p>
+        </div>
+        <div class="sectors-alt-grid">
+            <div class="sectors-alt-card"><div class="sectors-alt-icon"><i class="fas fa-shopping-cart"></i></div><div><h4>Retail</h4><p>Stores, supermarkets &amp; warehouses</p></div></div>
+            <div class="sectors-alt-card"><div class="sectors-alt-icon"><i class="fas fa-school"></i></div><div><h4>Schools &amp; Education</h4><p>Schools, colleges &amp; universities</p></div></div>
+            <div class="sectors-alt-card"><div class="sectors-alt-icon"><i class="fas fa-hard-hat"></i></div><div><h4>Construction</h4><p>Building sites &amp; contractors</p></div></div>
+            <div class="sectors-alt-card"><div class="sectors-alt-icon"><i class="fas fa-utensils"></i></div><div><h4>Hospitality</h4><p>Restaurants, hotels &amp; catering</p></div></div>
+            <div class="sectors-alt-card"><div class="sectors-alt-icon"><i class="fas fa-heartbeat"></i></div><div><h4>Healthcare</h4><p>Care homes, clinics &amp; NHS</p></div></div>
+            <div class="sectors-alt-card"><div class="sectors-alt-icon"><i class="fas fa-briefcase"></i></div><div><h4>Offices &amp; Corporate</h4><p>All commercial business sectors</p></div></div>
+        </div>
+        <div style="text-align:center;margin-top:36px;">
+            <a href="contact.html" class="btn-primary">Get a Free Training Quote</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-main">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="navbar-logo" style="margin-bottom:0;">
+                        <img src="images/ats-logo.svg" alt="Accomplished Training Solutions" style="height:90px;width:auto;display:block;">
+                    </a>
+                    <p>Delivering professional health and safety training across the UK since 2006. Committed to quality, engaging and certified training for businesses of all sizes.</p>
+                    <p style="font-size:0.8rem;color:rgba(255,255,255,0.35);">Service Areas: Nationwide, with focus on Kent, Sussex, Surrey, London and surrounding areas.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="courses.html">Course Catalogue</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="javascript:void(0)">Training Regions</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Popular Courses</h4>
+                    <ul>
+                        <li><a href="courses.html#first-aid">First Aid Training</a></li>
+                        <li><a href="courses.html#fire-safety">Fire Safety Training</a></li>
+                        <li><a href="courses.html#food-safety">Food Hygiene</a></li>
+                        <li><a href="courses.html#health-safety">Manual Handling</a></li>
+                        <li><a href="courses.html#health-safety">Health &amp; Safety</a></li>
+                        <li><a href="courses.html#specialist">Mental Health FA</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:info@accomplishedtraining.co.uk"><i class="fas fa-envelope" style="width:16px;"></i> info@accomplishedtraining.co.uk</a></li>
+                        <li><a href="tel:0800XXXXXXX"><i class="fas fa-phone" style="width:16px;"></i> 0800 XXX XXXX</a></li>
+                        <li><a href="#"><i class="fas fa-clock" style="width:16px;"></i> Mon-Fri: 9am - 5pm</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="container">
+        <div class="footer-bottom">
+            <p>&copy; 2026 Accomplished Training Solutions. All rights reserved. | Established 2006</p>
+            <div class="footer-bottom-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="cookie-policy.html">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+    /* Gallery filter */
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const items = document.querySelectorAll('.gallery-item');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const filter = btn.dataset.filter;
+            items.forEach(item => {
+                item.style.display = (filter === 'all' || item.dataset.category === filter) ? '' : 'none';
+            });
+        });
+    });
+
+    /* Lightbox */
+    let visibleItems = [];
+    let currentIndex = 0;
+
+    function getVisible() {
+        return Array.from(items).filter(i => i.style.display !== 'none');
+    }
+
+    function openLightbox(index) {
+        visibleItems = getVisible();
+        currentIndex = index;
+        showSlide(currentIndex);
+        document.getElementById('lightbox').classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        document.getElementById('lightbox').classList.remove('open');
+        document.body.style.overflow = '';
+    }
+
+    function showSlide(idx) {
+        const item = visibleItems[idx];
+        const img = item.querySelector('img');
+        document.getElementById('lightboxImg').src = img.src.replace(/w=\d+/, 'w=1200');
+        document.getElementById('lightboxImg').alt = img.alt;
+        document.getElementById('lightboxCaption').textContent = item.dataset.caption || '';
+        document.getElementById('lightboxCounter').textContent = `${idx + 1} / ${visibleItems.length}`;
+    }
+
+    items.forEach(item => {
+        item.addEventListener('click', () => {
+            visibleItems = getVisible();
+            openLightbox(visibleItems.indexOf(item));
+        });
+    });
+
+    document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+    document.getElementById('lightboxPrev').addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + visibleItems.length) % visibleItems.length;
+        showSlide(currentIndex);
+    });
+    document.getElementById('lightboxNext').addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % visibleItems.length;
+        showSlide(currentIndex);
+    });
+    document.getElementById('lightbox').addEventListener('click', e => {
+        if (e.target === e.currentTarget) closeLightbox();
+    });
+    document.addEventListener('keydown', e => {
+        if (!document.getElementById('lightbox').classList.contains('open')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') { currentIndex = (currentIndex - 1 + visibleItems.length) % visibleItems.length; showSlide(currentIndex); }
+        if (e.key === 'ArrowRight') { currentIndex = (currentIndex + 1) % visibleItems.length; showSlide(currentIndex); }
+    });
+</script>
+</body>
+</html>

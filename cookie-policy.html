@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Policy - Accomplished Training Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/courses.css">
+    <link rel="stylesheet" href="styles/legal.css">
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announcement-bar">
+    <i class="fas fa-certificate"></i>&nbsp; HSE Compliant Training | Established 2006 | UK Wide Coverage
+    <a href="contact.html">Get a Free Quote Today &rarr;</a>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="navbar-logo">
+            <img src="images/ats-logo.svg" alt="Accomplished Training Solutions" style="height:150px;width:auto;display:block;">
+        </a>
+        <div class="navbar-right">
+            <ul class="navbar-nav">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses.html">Course Catalogue</a></li>
+                <li class="nav-item-dropdown">
+                    <a href="javascript:void(0)">Training Regions <i class="fas fa-chevron-down nav-dropdown-arrow"></i></a>
+                    <div class="nav-dropdown-menu">
+                        <a href="london-south-east.html"><i class="fas fa-map-marker-alt"></i> London &amp; South East</a>
+                        <a href="south-west-wales.html"><i class="fas fa-map-marker-alt"></i> South West &amp; Wales</a>
+                        <a href="midlands.html"><i class="fas fa-map-marker-alt"></i> Midlands</a>
+                        <a href="north-england-scotland.html"><i class="fas fa-map-marker-alt"></i> North England &amp; Scotland</a>
+                    </div>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li class="nav-item-dropdown">
+                    <a href="blog.html">Blog <i class="fas fa-chevron-down nav-dropdown-arrow"></i></a>
+                    <div class="nav-dropdown-menu">
+                        <a href="blog.html"><i class="fas fa-th-list"></i> All Blog Posts</a>
+                        <a href="blog-fire-safety-london.html"><i class="fas fa-fire"></i> Fire Safety Training in London</a>
+                        <a href="blog-first-aid-training.html"><i class="fas fa-heart"></i> Why First Aid Training is Crucial</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="navbar-divider"></div>
+            <button class="search-btn" id="searchToggle"><i class="fas fa-search"></i></button>
+            <a href="tel:0800XXXXXXX" class="navbar-phone"><i class="fas fa-phone-alt"></i> 0800 XXX XXXX</a>
+            <a href="contact.html" class="btn-primary" style="padding:10px 20px;font-size:0.87rem;margin-left:16px;"><i class="fas fa-file-alt"></i> Free Quote</a>
+        </div>
+        <div class="nav-mobile-right">
+            <button class="search-btn search-btn-mobile" id="searchToggleMobile"><i class="fas fa-search"></i></button>
+            <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </div>
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="Search courses, topics, regions...">
+            <button class="search-close" id="searchClose"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="search-results" id="searchResults"></div>
+        <p class="search-no-results" id="searchNoResults">No results found. Try different keywords.</p>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="about.html">About Us</a>
+        <a href="courses.html">Course Catalogue</a>
+        <div class="mob-drop">
+            <button class="mob-drop-btn" id="mobRegionsBtn">Training Regions <i class="fas fa-chevron-down mob-chevron"></i></button>
+            <div class="mob-drop-body" id="mobRegionsBody">
+                <a href="london-south-east.html"><i class="fas fa-map-marker-alt"></i> London &amp; South East</a>
+                <a href="south-west-wales.html"><i class="fas fa-map-marker-alt"></i> South West &amp; Wales</a>
+                <a href="midlands.html"><i class="fas fa-map-marker-alt"></i> Midlands</a>
+                <a href="north-england-scotland.html"><i class="fas fa-map-marker-alt"></i> North England &amp; Scotland</a>
+            </div>
+        </div>
+        <a href="gallery.html">Gallery</a>
+        <a href="testimonials.html">Testimonials</a>
+        <div class="mob-drop">
+            <div class="mob-drop-split">
+                <a href="blog.html">Blog</a>
+                <button class="mob-drop-chevron" id="mobBlogBtn"><i class="fas fa-chevron-down mob-chevron"></i></button>
+            </div>
+            <div class="mob-drop-body" id="mobBlogBody">
+                <a href="blog-fire-safety-london.html"><i class="fas fa-fire"></i> Fire Safety Training in London</a>
+                <a href="blog-first-aid-training.html"><i class="fas fa-heart"></i> Why First Aid Training is Crucial</a>
+            </div>
+        </div>
+        <a href="contact.html">Contact</a>
+        <a href="tel:0800XXXXXXX" style="color:var(--green);font-weight:700;border-bottom:none;"><i class="fas fa-phone-alt"></i> 0800 XXX XXXX</a>
+    </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+    <div class="container">
+        <span class="section-tag">Legal</span>
+        <h1>Cookie Policy</h1>
+        <p>How we use cookies and how to manage your preferences</p>
+    </div>
+</section>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb-bar">
+    <div class="container">
+        <nav class="breadcrumb-nav">
+            <a href="index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Cookie Policy</span>
+        </nav>
+    </div>
+</div>
+
+<!-- POLICY CONTENT -->
+<section class="section-padding">
+    <div class="container">
+        <div class="legal-layout">
+            <aside class="legal-toc">
+                <h4>Contents</h4>
+                <ol>
+                    <li><a href="#what-are-cookies">What Are Cookies?</a></li>
+                    <li><a href="#cookies-we-use">Cookies We Use</a></li>
+                    <li><a href="#google-analytics">Google Analytics</a></li>
+                    <li><a href="#manage-settings">Manage Your Settings</a></li>
+                    <li><a href="#browser-controls">Browser Controls</a></li>
+                    <li><a href="#changes">Changes to This Policy</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
+                </ol>
+            </aside>
+
+            <div class="legal-body">
+                <p class="legal-last-updated"><i class="fas fa-calendar-alt"></i> Last Updated: June 2026</p>
+
+                <section id="what-are-cookies">
+                    <h2>1. What Are Cookies?</h2>
+                    <p>Cookies are small text files placed on your device when you visit a website. They help websites remember your preferences, understand how you use the site, and improve your experience on return visits.</p>
+                    <p>Cookies cannot harm your device and do not contain personal information such as your name or payment details. You have the right to accept or decline non-essential cookies at any time.</p>
+                </section>
+
+                <section id="cookies-we-use">
+                    <h2>2. Cookies We Use</h2>
+                    <p>We keep our use of cookies minimal. We only use two categories:</p>
+
+                    <div class="cookie-table-wrapper">
+                        <table class="cookie-table">
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Cookie Name(s)</th>
+                                    <th>Purpose</th>
+                                    <th>Duration</th>
+                                    <th>Can be declined?</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="Category"><span class="cookie-badge cookie-badge--essential">Essential</span></td>
+                                    <td data-label="Cookie Name"><code>ats_cookie_consent</code></td>
+                                    <td data-label="Purpose">Stores your cookie preferences so we don&rsquo;t ask again</td>
+                                    <td data-label="Duration">1 year</td>
+                                    <td data-label="Can be declined?">No - required to function</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Category"><span class="cookie-badge cookie-badge--analytics">Analytics</span></td>
+                                    <td data-label="Cookie Name"><code>_ga</code>, <code>_ga_*</code></td>
+                                    <td data-label="Purpose">Google Analytics - tracks page views, session duration, and traffic sources anonymously</td>
+                                    <td data-label="Duration">Up to 2 years</td>
+                                    <td data-label="Can be declined?">Yes - manage below</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Category"><span class="cookie-badge cookie-badge--analytics">Analytics</span></td>
+                                    <td data-label="Cookie Name"><code>_gid</code></td>
+                                    <td data-label="Purpose">Google Analytics - distinguishes users for session tracking</td>
+                                    <td data-label="Duration">24 hours</td>
+                                    <td data-label="Can be declined?">Yes - manage below</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section id="google-analytics">
+                    <h2>3. Google Analytics &amp; Search Console</h2>
+                    <p>We use <strong>Google Analytics</strong> to understand how visitors interact with our website. This includes information such as which pages are visited, how long users spend on each page, and which search terms brought visitors to our site.</p>
+                    <p>We also use <strong>Google Search Console</strong> to monitor our website&rsquo;s presence in Google Search results. Search Console does not set cookies on your device.</p>
+                    <p>Google Analytics data is:</p>
+                    <ul>
+                        <li>Anonymised  -  we do not see individual identifiable users</li>
+                        <li>Aggregated  -  we see trends and totals, not individual records</li>
+                        <li>Not shared with third parties for advertising or marketing</li>
+                        <li>Retained for 26 months in line with Google&rsquo;s default settings</li>
+                    </ul>
+                    <p>You can learn more about how Google uses this data at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
+                </section>
+
+                <section id="manage-settings">
+                    <h2>4. Manage Your Cookie Settings</h2>
+                    <p>You can update your preferences at any time using the panel below. Your choice will be saved for one year.</p>
+
+                    <div class="cookie-settings-panel" id="cookieSettingsPanel">
+                        <div class="cookie-setting-row">
+                            <div class="cookie-setting-info">
+                                <h4><i class="fas fa-shield-alt"></i> Essential Cookies</h4>
+                                <p>These cookies are necessary for the website to work and cannot be disabled. They do not track personal data.</p>
+                            </div>
+                            <div class="cookie-setting-control">
+                                <span class="cookie-always-on">Always On</span>
+                            </div>
+                        </div>
+                        <div class="cookie-setting-row">
+                            <div class="cookie-setting-info">
+                                <h4><i class="fas fa-chart-bar"></i> Analytics Cookies</h4>
+                                <p>Google Analytics  -  helps us understand how visitors use our website so we can improve it. All data is anonymised and aggregated.</p>
+                            </div>
+                            <div class="cookie-setting-control">
+                                <label class="cookie-toggle" for="analyticsToggle" aria-label="Toggle analytics cookies">
+                                    <input type="checkbox" id="analyticsToggle">
+                                    <span class="cookie-toggle-slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="cookie-settings-actions">
+                            <button class="btn-primary" id="saveCookieSettings"><i class="fas fa-save"></i> Save My Preferences</button>
+                            <p class="cookie-settings-status" id="cookieSettingsStatus"></p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="browser-controls">
+                    <h2>5. Browser Controls</h2>
+                    <p>You can also control cookies through your browser settings. Most browsers allow you to:</p>
+                    <ul>
+                        <li>View and delete cookies stored on your device</li>
+                        <li>Block third-party cookies</li>
+                        <li>Block all cookies (note: this may affect website functionality)</li>
+                        <li>Receive a notification before a cookie is stored</li>
+                    </ul>
+                    <p>Browser-specific guidance:</p>
+                    <ul>
+                        <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener">Google Chrome</a></li>
+                        <li><a href="https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox" target="_blank" rel="noopener">Mozilla Firefox</a></li>
+                        <li><a href="https://support.microsoft.com/en-us/windows/delete-and-manage-cookies-168dab11-0753-043d-7c16-ede5947fc64d" target="_blank" rel="noopener">Microsoft Edge</a></li>
+                        <li><a href="https://support.apple.com/en-gb/guide/safari/sfri11471/mac" target="_blank" rel="noopener">Apple Safari</a></li>
+                    </ul>
+                </section>
+
+                <section id="changes">
+                    <h2>6. Changes to This Cookie Policy</h2>
+                    <p>We may update this Cookie Policy from time to time. Any changes will be posted on this page with an updated &ldquo;Last Updated&rdquo; date. We encourage you to review this page periodically.</p>
+                </section>
+
+                <section id="contact-us">
+                    <h2>7. Contact Us</h2>
+                    <p>If you have any questions about our use of cookies, please contact us:</p>
+                    <div class="legal-contact-card">
+                        <h4>Accomplished Training Solutions</h4>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:info@accomplishedtraining.co.uk">info@accomplishedtraining.co.uk</a></p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:0800XXXXXXX">0800 XXX XXXX</a></p>
+                    </div>
+                    <p>For information about your wider data protection rights, see our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-main">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="navbar-logo" style="margin-bottom:0;">
+                        <img src="images/ats-logo.svg" alt="Accomplished Training Solutions" style="height:90px;width:auto;display:block;">
+                    </a>
+                    <p>Delivering professional health and safety training across the UK since 2006. Committed to quality, engaging and certified training for businesses of all sizes.</p>
+                    <p style="font-size:0.8rem;color:rgba(255,255,255,0.35);">Service Areas: Nationwide, with focus on Kent, Sussex, Surrey, London and surrounding areas.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="courses.html">Course Catalogue</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="javascript:void(0)">Training Regions</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Popular Courses</h4>
+                    <ul>
+                        <li><a href="courses.html#first-aid">First Aid Training</a></li>
+                        <li><a href="courses.html#fire-safety">Fire Safety Training</a></li>
+                        <li><a href="courses.html#food-safety">Food Hygiene</a></li>
+                        <li><a href="courses.html#health-safety">Manual Handling</a></li>
+                        <li><a href="courses.html#health-safety">Health &amp; Safety</a></li>
+                        <li><a href="courses.html#specialist">Mental Health FA</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:info@accomplishedtraining.co.uk"><i class="fas fa-envelope" style="width:16px;"></i> info@accomplishedtraining.co.uk</a></li>
+                        <li><a href="tel:0800XXXXXXX"><i class="fas fa-phone" style="width:16px;"></i> 0800 XXX XXXX</a></li>
+                        <li><a href="#"><i class="fas fa-clock" style="width:16px;"></i> Mon-Fri: 9am - 5pm</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="container">
+        <div class="footer-bottom">
+            <p>&copy; 2026 Accomplished Training Solutions. All rights reserved. | Established 2006</p>
+            <div class="footer-bottom-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="cookie-policy.html" style="color:var(--green-pale);">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+/* Cookie settings panel  -  runs only on this page */
+(function () {
+    const toggle = document.getElementById('analyticsToggle');
+    const saveBtn = document.getElementById('saveCookieSettings');
+    const status = document.getElementById('cookieSettingsStatus');
+
+    function getConsent() {
+        return localStorage.getItem('ats_cookie_consent');
+    }
+
+    /* Reflect current setting on page load */
+    if (toggle) {
+        toggle.checked = getConsent() === 'granted';
+    }
+
+    if (saveBtn) {
+        saveBtn.addEventListener('click', function () {
+            const choice = toggle.checked ? 'granted' : 'denied';
+            localStorage.setItem('ats_cookie_consent', choice);
+
+            if (choice === 'granted') {
+                status.textContent = 'Analytics cookies enabled. Thank you!';
+                status.style.color = 'var(--green)';
+                /* Enable GA if already loaded */
+                if (typeof gtag === 'function') {
+                    gtag('consent', 'update', { analytics_storage: 'granted' });
+                }
+            } else {
+                status.textContent = 'Analytics cookies disabled. Only essential cookies are active.';
+                status.style.color = 'var(--gray)';
+                if (typeof gtag === 'function') {
+                    gtag('consent', 'update', { analytics_storage: 'denied' });
+                }
+            }
+
+            /* Hide the cookie banner sitewide if it's open */
+            const banner = document.getElementById('cookieBanner');
+            if (banner) banner.remove();
+        });
+    }
+}());
+</script>
+</body>
+</html>

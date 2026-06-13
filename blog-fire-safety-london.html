@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Safety Training in London: Essential Guidelines for Businesses - ATS Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/courses.css">
+    <link rel="stylesheet" href="styles/blog-article.css">
+    <style>.article-hero-img { height: 440px; }</style>
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announcement-bar">
+    <i class="fas fa-certificate"></i>&nbsp; HSE Compliant Training | Established 2006 | UK Wide Coverage
+    <a href="contact.html">Get a Free Quote Today â†’</a>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="navbar-logo">
+            <img src="images/ats-logo.svg" alt="Accomplished Training Solutions" style="height:150px;width:auto;display:block;">
+        </a>
+        <div class="navbar-right">
+            <ul class="navbar-nav">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses.html">Course Catalogue</a></li>
+                <li class="nav-item-dropdown">
+                    <a href="javascript:void(0)">Training Regions <i class="fas fa-chevron-down nav-dropdown-arrow"></i></a>
+                    <div class="nav-dropdown-menu">
+                        <a href="london-south-east.html"><i class="fas fa-map-marker-alt"></i> London &amp; South East</a>
+                        <a href="south-west-wales.html"><i class="fas fa-map-marker-alt"></i> South West &amp; Wales</a>
+                        <a href="midlands.html"><i class="fas fa-map-marker-alt"></i> Midlands</a>
+                        <a href="north-england-scotland.html"><i class="fas fa-map-marker-alt"></i> North England &amp; Scotland</a>
+                    </div>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li class="nav-item-dropdown">
+                    <a href="blog.html" style="color:var(--green);font-weight:700;">Blog <i class="fas fa-chevron-down nav-dropdown-arrow"></i></a>
+                    <div class="nav-dropdown-menu">
+                        <a href="blog.html"><i class="fas fa-th-list"></i> All Blog Posts</a>
+                        <a href="blog-fire-safety-london.html"><i class="fas fa-fire"></i> Fire Safety Training in London</a>
+                        <a href="blog-first-aid-training.html"><i class="fas fa-heart"></i> Why First Aid Training is Crucial</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="navbar-divider"></div>
+            <button class="search-btn" id="searchToggle" aria-label="Search"><i class="fas fa-search"></i></button>
+            <div class="navbar-divider"></div>
+            <a href="tel:0800XXXXXXX" class="navbar-phone"><i class="fas fa-phone-alt"></i> 0800 XXX XXXX</a>
+            <a href="contact.html" class="btn-primary" style="padding:10px 20px;font-size:0.87rem;margin-left:16px;"><i class="fas fa-file-alt"></i> Free Quote</a>
+        </div>
+        <div class="nav-mobile-right">
+            <button class="search-btn search-btn-mobile" id="searchToggleMobile"><i class="fas fa-search"></i></button>
+            <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </div>
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="Search courses, topics, regions..." autocomplete="off">
+            <button class="search-close" id="searchClose"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="search-results" id="searchResults"></div>
+        <div class="search-no-results" id="searchNoResults">No results found. Try a different search term.</div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="about.html">About Us</a>
+        <a href="courses.html">Course Catalogue</a>
+        <div class="mob-drop">
+            <button class="mob-drop-btn" id="mobRegionsBtn">Training Regions <i class="fas fa-chevron-down mob-chevron"></i></button>
+            <div class="mob-drop-body" id="mobRegionsBody">
+                <a href="london-south-east.html"><i class="fas fa-map-marker-alt"></i> London &amp; South East</a>
+                <a href="south-west-wales.html"><i class="fas fa-map-marker-alt"></i> South West &amp; Wales</a>
+                <a href="midlands.html"><i class="fas fa-map-marker-alt"></i> Midlands</a>
+                <a href="north-england-scotland.html"><i class="fas fa-map-marker-alt"></i> North England &amp; Scotland</a>
+            </div>
+        </div>
+        <a href="gallery.html">Gallery</a>
+        <a href="testimonials.html">Testimonials</a>
+        <div class="mob-drop">
+            <div class="mob-drop-split">
+                <a href="blog.html" style="color:var(--green);font-weight:700;">Blog</a>
+                <button class="mob-drop-chevron" id="mobBlogBtn"><i class="fas fa-chevron-down mob-chevron"></i></button>
+            </div>
+            <div class="mob-drop-body" id="mobBlogBody">
+                <a href="blog-fire-safety-london.html"><i class="fas fa-fire"></i> Fire Safety Training in London</a>
+                <a href="blog-first-aid-training.html"><i class="fas fa-heart"></i> Why First Aid Training is Crucial</a>
+            </div>
+        </div>
+        <a href="contact.html">Contact</a>
+        <a href="tel:0800XXXXXXX" style="color:var(--green);font-weight:700;border-bottom:none;"><i class="fas fa-phone-alt"></i> 0800 XXX XXXX</a>
+    </div>
+</nav>
+
+<!-- ARTICLE HERO -->
+<section class="article-hero">
+    <div class="container">
+        <a href="blog.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Blog</a>
+        <div class="article-hero-tag">Fire Safety</div>
+        <h1>Fire Safety Training in London: Essential Guidelines for Businesses</h1>
+        <div class="article-meta">
+            <span><i class="fas fa-calendar-alt"></i> Published: December 12, 2025</span>
+            <span><i class="fas fa-clock"></i> Reading time: 5 minutes</span>
+            <span><i class="fas fa-tag"></i> Fire Safety</span>
+        </div>
+    </div>
+    <div class="article-hero-img">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1400&q=80" alt="Fire Safety Training in London">
+    </div>
+</section>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb-bar">
+    <div class="container">
+        <nav class="breadcrumb-nav">
+            <a href="index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="blog.html">Blog</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Fire Safety Training in London</span>
+        </nav>
+    </div>
+</div>
+
+<!-- ARTICLE BODY -->
+<section class="section-padding" style="background:var(--off-white);">
+    <div class="container">
+        <div class="article-layout">
+
+            <!-- MAIN CONTENT -->
+            <article class="article-content">
+                <p>In the bustling capital of <a href="london-south-east.html">London</a>, ensuring fire safety compliance is not just a legal requirement but a critical responsibility for every business owner and employer. With thousands of commercial properties across the city, understanding and implementing proper fire safety measures can mean the difference between life and death.</p>
+
+                <h2>The Legal Framework in London</h2>
+                <p>Under the Regulatory Reform (Fire Safety) Order 2005, all businesses in London must have a "responsible person" who ensures fire safety compliance. This legislation applies to all non-domestic premises, including offices, shops, warehouses, and industrial sites across Greater London.</p>
+                <p>The London Fire Brigade conducts regular inspections and has the authority to issue enforcement notices or even prosecute businesses that fail to meet standards.</p>
+
+                <h2>Why London Businesses Need Specialised Fire Safety Training</h2>
+                <p>London presents unique fire safety challenges that businesses in other parts of the UK may not face to the same degree:</p>
+                <ul>
+                    <li><strong>High-rise buildings:</strong> Many London offices and commercial spaces are in tall buildings, requiring specialised evacuation procedures</li>
+                    <li><strong>Historic structures:</strong> Older buildings in the City of London and Westminster may have complex layouts and unique fire safety considerations</li>
+                    <li><strong>Dense urban environment:</strong> Limited access for emergency services means internal fire prevention is crucial</li>
+                    <li><strong>High occupancy:</strong> Busy commercial areas require robust crowd management during evacuations</li>
+                </ul>
+
+                <h2>Essential Components of Fire Safety Training</h2>
+                <p>Effective fire safety training for London businesses should cover all of the following areas:</p>
+
+                <h3>Fire Risk Assessment</h3>
+                <p>Understanding how to identify fire hazards specific to your London premises, from electrical equipment to storage materials.</p>
+
+                <h3>Emergency Evacuation Procedures</h3>
+                <p>Clear protocols for evacuating buildings safely, including assembly points and accountability procedures tailored to London's urban environment.</p>
+
+                <h3>Fire Equipment Training</h3>
+                <p>Hands-on training with fire extinguishers, fire blankets, and alarm systems commonly found in London commercial properties.</p>
+
+                <h3>Role of Fire Wardens</h3>
+                <p>Specialised training for designated fire wardens who have additional responsibilities during emergencies, including sweeping floors, managing evacuation routes, and liaising with emergency services.</p>
+
+                <h2>Frequency and Compliance Requirements</h2>
+                <p>The London Fire Brigade recommends that fire safety training should be provided:</p>
+                <ul>
+                    <li>To all new employees during induction</li>
+                    <li>As refresher training at least annually</li>
+                    <li>Whenever there are significant changes to the workplace</li>
+                    <li>After any fire incident or near miss</li>
+                </ul>
+
+                <h2>Choosing a Training Provider in London</h2>
+                <p>When selecting fire safety training for your London business, ensure the provider:</p>
+                <ul>
+                    <li>Has experience with London Fire Brigade requirements</li>
+                    <li>Offers courses accredited by recognised bodies</li>
+                    <li>Can deliver training on-site at your London premises</li>
+                    <li>Provides certification and documentation for compliance records</li>
+                    <li>Understands the specific challenges of your industry sector</li>
+                </ul>
+
+                <div class="article-callout">
+                    <div class="article-callout-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                    <div>
+                        <h4>Take Action Today</h4>
+                        <p>Don't wait for an inspection or incident to address fire safety training. Protect your employees, customers, and business by ensuring comprehensive fire safety training is in place. Contact Accomplished Training Solutions today to schedule fire safety training tailored to your London business needs.</p>
+                    </div>
+                </div>
+
+                <div class="article-cta-inline">
+                    <h3>Ready to Book Your Workplace Training?</h3>
+                    <a href="courses.html#fire-safety" class="btn-primary"><i class="fas fa-fire-extinguisher"></i> Learn More About Our Fire Safety Courses</a>
+                    <a href="contact.html" class="btn-outline" style="margin-top:8px;display:inline-block;"><i class="fas fa-file-alt"></i> Get a Free Quote</a>
+                </div>
+            </article>
+
+            <!-- SIDEBAR -->
+            <aside class="article-sidebar">
+
+                <div class="sidebar-cta">
+                    <h4>Need Fire Safety Training?</h4>
+                    <p>We deliver Fire Warden, Fire Marshal and Fire Safety Awareness courses directly at your London premises. See our <a href="gallery.html">gallery of training in action</a>.</p>
+                    <a href="contact.html" class="btn-primary" style="display:block;text-align:center;"><i class="fas fa-file-alt"></i> Get a Free Quote</a>
+                </div>
+
+                <div class="sidebar-card">
+                    <h4>In This Article</h4>
+                    <ul class="sidebar-toc">
+                        <li><a href="#"><i class="fas fa-angle-right"></i> The Legal Framework in London</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Why London Businesses Need Specialised Training</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Essential Components of Fire Safety Training</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Frequency &amp; Compliance Requirements</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Choosing a Training Provider in London</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card">
+                    <h4>Related Posts</h4>
+                    <div class="sidebar-related-post">
+                        <img src="images/first-aid-blog.webp" alt="First Aid Training">
+                        <div class="sidebar-related-post-text">
+                            <span>First Aid</span>
+                            <a href="blog-first-aid-training.html">Why First Aid Training is Crucial for Every Company</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-card">
+                    <h4>Our Fire Safety Courses</h4>
+                    <ul class="sidebar-toc">
+                        <li><a href="courses.html#fire-safety"><i class="fas fa-angle-right"></i> Fire Warden Training</a></li>
+                        <li><a href="courses.html#fire-safety"><i class="fas fa-angle-right"></i> Fire Marshal Training</a></li>
+                        <li><a href="courses.html#fire-safety"><i class="fas fa-angle-right"></i> Fire Safety Awareness</a></li>
+                        <li><a href="courses.html#fire-safety"><i class="fas fa-angle-right"></i> Fire Risk Assessment</a></li>
+                    </ul>
+                </div>
+
+            </aside>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section section-padding">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to Book Your Workplace Training?</h2>
+            <p>We deliver <a href="blog-first-aid-training.html">first aid</a>, fire safety, food hygiene and health &amp; safety training directly to your workplace across the UK. All courses are HSE compliant and certificates are issued on the day.</p>
+            <div class="cta-actions">
+                <a href="contact.html" class="btn-primary"><i class="fas fa-file-alt"></i> Get a Free Quote</a>
+                <div class="cta-phone">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Call: <a href="tel:0800XXXXXXX">0800 XXX XXXX</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQs -->
+<section class="section-padding" style="background:var(--off-white);">
+    <div class="container">
+        <div class="faq-header">
+            <span class="section-tag">Common Questions</span>
+            <h2 class="section-title">Fire Safety Training FAQs</h2>
+            <p class="section-subtitle" style="margin:0 auto;">Answers to the questions we get asked most often about workplace fire safety training.</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <h4>Is fire safety training a legal requirement in the UK?</h4>
+                    <div class="faq-icon"><i class="fas fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. Under the Regulatory Reform (Fire Safety) Order 2005, all employers must provide adequate fire safety instruction and training for their staff. This applies to all non-domestic premises including offices, shops, warehouses, and industrial sites. Failure to comply can result in enforcement notices or prosecution by the Fire and Rescue Authority.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <h4>How often should fire safety training be refreshed?</h4>
+                    <div class="faq-icon"><i class="fas fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>The London Fire Brigade and HSE recommend fire safety training at least once a year for all staff, plus whenever there are significant changes to the premises, working practices, or personnel. New employees should receive training as part of their induction before starting work.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <h4>What is the difference between a Fire Warden and a Fire Marshal?</h4>
+                    <div class="faq-icon"><i class="fas fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>The terms are often used interchangeably, but in practice a Fire Warden typically focuses on sweeping a specific area and guiding occupants to the assembly point, while a Fire Marshal may take on a more senior role, coordinating the full evacuation, liaising with the fire service, and managing the assembly point. Both roles are covered in our <a href="courses.html#fire-safety">Fire Warden and Fire Marshal training courses</a>.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <h4>How long does fire safety training take?</h4>
+                    <div class="faq-icon"><i class="fas fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Fire Safety Awareness training for general staff typically takes half a day. Fire Warden and Fire Marshal courses are usually a full day. Training can be delivered at your premises at a time that suits your team, minimising disruption to your working day.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <h4>Who needs fire safety training?</h4>
+                    <div class="faq-icon"><i class="fas fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>All employees should receive basic fire safety awareness training. Designated fire wardens, marshals, and the responsible person named in your fire risk assessment require more in-depth training. The number of trained fire wardens you need depends on the size of your premises, the number of occupants, and the nature of the work carried out.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <h4>Can fire safety training be delivered at our premises?</h4>
+                    <div class="faq-icon"><i class="fas fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely. All of our fire safety courses are delivered on-site at your workplace across the UK. Training at your own premises means your team learns evacuation routes and procedures specific to your building, making the training far more relevant and effective.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- COVERAGE GRID -->
+<section class="section-padding" style="background:white;">
+    <div class="container">
+        <div class="coverage-header">
+            <span class="section-tag">Training Regions</span>
+            <h2 class="section-title">Our Coverage Area &amp; Training Locations</h2>
+            <p class="section-subtitle" style="margin:0 auto;">We deliver professional training throughout London, the South East, Midlands, North of England, Scotland, South West and Wales.</p>
+        </div>
+        <div class="coverage-grid">
+            <div class="coverage-region"><h4>Kent</h4><ul><li>Maidstone</li><li>Canterbury</li><li>Ashford</li><li>Tunbridge Wells</li><li>Dover</li></ul></div>
+            <div class="coverage-region"><h4>Sussex</h4><ul><li>Brighton</li><li>Eastbourne</li><li>Hastings</li><li>Crawley</li><li>Worthing</li></ul></div>
+            <div class="coverage-region"><h4>Surrey</h4><ul><li>Guildford</li><li>Woking</li><li>Croydon</li><li>Epsom</li><li>Redhill</li></ul></div>
+            <div class="coverage-region"><h4>London</h4><ul><li>Central London</li><li>South London</li><li>East London</li><li>West London</li><li>North London</li></ul></div>
+            <div class="coverage-region"><h4>Midlands &amp; North</h4><ul><li>Birmingham</li><li>Manchester</li><li>Leeds</li><li>Nottingham</li><li>Sheffield</li></ul></div>
+            <div class="coverage-region"><h4>East of England</h4><ul><li>Norwich</li><li>Cambridge</li><li>Ipswich</li><li>Peterborough</li></ul></div>
+            <div class="coverage-nationwide">
+                <h4><i class="fas fa-globe"></i>&nbsp; Nationwide Coverage</h4>
+                <p>We deliver training anywhere in the UK. Contact us to discuss your location, no matter where you are, our trainers will come to you.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section section-padding" id="contact">
+    <div class="container">
+        <div style="text-align:center;margin-bottom:48px;">
+            <span class="section-tag">Get In Touch</span>
+            <h2 class="section-title">Contact Us Today</h2>
+            <p class="section-subtitle" style="margin:0 auto;">We're here to help. Contact us for expert advice on the right training for your business.</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <p>Ready to discuss your training needs? Our expert team is here to help you find the right solution for your business.</p>
+                <div class="contact-items">
+                    <div class="contact-item">
+                        <div class="contact-item-icon green"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-item-text"><strong>Email</strong><span><a href="mailto:info@accomplishedtraining.co.uk">info@accomplishedtraining.co.uk</a></span></div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon navy"><i class="fas fa-phone-alt"></i></div>
+                        <div class="contact-item-text"><strong>Phone</strong><span><a href="tel:0800XXXXXXX">0800 XXX XXXX</a></span></div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon gold"><i class="fas fa-clock"></i></div>
+                        <div class="contact-item-text"><strong>Hours</strong><span>Mon&ndash;Fri 9:00 AM &ndash; 5:00 PM</span></div>
+                    </div>
+                </div>
+                <div style="margin-top:28px;padding:24px;background:white;border-radius:var(--radius-md);border:1px solid var(--light-gray);">
+                    <h4 style="font-size:0.9rem;font-weight:700;color:var(--navy);margin-bottom:12px;"><i class="fas fa-map-marker-alt" style="color:var(--green);margin-right:8px;"></i>Training Locations</h4>
+                    <p style="font-size:0.85rem;color:var(--gray);line-height:1.6;">We deliver training at your workplace premises, schools and educational facilities, community centres and hired training venues nationwide.</p>
+                </div>
+            </div>
+            <div style="position:relative;min-height:420px;height:100%;overflow:hidden;border:1px solid var(--light-gray);box-shadow:var(--shadow-md);">
+                <iframe
+                    src="https://maps.google.com/maps?q=United+Kingdom&output=embed&z=5"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;display:block;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="ATS Training Coverage, England and Wales">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-main">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="navbar-logo" style="margin-bottom:0;">
+                        <img src="images/ats-logo.svg" alt="Accomplished Training Solutions" style="height:90px;width:auto;display:block;">
+                    </a>
+                    <p>Delivering professional health and safety training across the UK since 2006. Committed to quality, engaging and certified training for businesses of all sizes.</p>
+                    <p style="font-size:0.8rem;color:rgba(255,255,255,0.35);">Service Areas: Nationwide, with focus on Kent, Sussex, Surrey, London and surrounding areas.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="courses.html">Course Catalogue</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="javascript:void(0)">Training Regions</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Popular Courses</h4>
+                    <ul>
+                        <li><a href="courses.html#first-aid">First Aid Training</a></li>
+                        <li><a href="courses.html#fire-safety">Fire Safety Training</a></li>
+                        <li><a href="courses.html#food-safety">Food Hygiene</a></li>
+                        <li><a href="courses.html#health-safety">Manual Handling</a></li>
+                        <li><a href="courses.html#health-safety">Health &amp; Safety</a></li>
+                        <li><a href="courses.html#specialist">Mental Health FA</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:info@accomplishedtraining.co.uk"><i class="fas fa-envelope" style="width:16px;"></i> info@accomplishedtraining.co.uk</a></li>
+                        <li><a href="tel:0800XXXXXXX"><i class="fas fa-phone" style="width:16px;"></i> 0800 XXX XXXX</a></li>
+                        <li><a href="#"><i class="fas fa-clock" style="width:16px;"></i> Mon-Fri: 9am - 5pm</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="container">
+        <div class="footer-bottom">
+            <p>&copy; 2026 Accomplished Training Solutions. All rights reserved. | Established 2006</p>
+            <div class="footer-bottom-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="cookie-policy.html">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

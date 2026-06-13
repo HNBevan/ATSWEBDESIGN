@@ -1,0 +1,34 @@
+/* ── Dark background link colours ── */
+.about-section a:not([class]) { color: var(--green-pale); }
+
+/* ── About page layout classes ── */
+.about-training-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+.about-courses-grid  { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.about-coverage-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+.about-stat-grid     { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 32px; }
+
+/* ── Tablet 1024px ── */
+@media (max-width: 1024px) {
+    .about-training-grid { grid-template-columns: 1fr; gap: 32px; }
+    .about-courses-grid  { grid-template-columns: repeat(2, 1fr); }
+    .about-coverage-grid { grid-template-columns: 1fr; gap: 40px; }
+}
+
+/* ── Mobile 768px ── */
+@media (max-width: 768px) {
+    .about-stat-card { display: none; }
+    .about-training-grid img { height: 260px !important; }
+    .about-courses-grid { grid-template-columns: repeat(2, 1fr); }
+    .about-coverage-grid { gap: 32px; }
+}
+
+/* ── Phone 480px ── */
+@media (max-width: 480px) {
+    .about-courses-grid  { grid-template-columns: 1fr; }
+    .about-stat-grid     { grid-template-columns: 1fr; }
+    .about-stats         { grid-template-columns: 1fr; }
+    .about-training-grid img { height: 220px !important; }
+    .compliance-grid     { gap: 28px; }
+    .about-coverage-grid { gap: 24px; }
+    .about-section .about-grid { gap: 28px; }
+}

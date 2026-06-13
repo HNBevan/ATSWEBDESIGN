@@ -1,0 +1,19 @@
+/* DESKTOP */
+#courses .course-card { height: 270px; }
+#courses .container { padding-left: 80px; padding-right: 80px; }
+
+/* TABLET & MOBILE — undo fixed height, show all text, reset padding */
+@media (max-width: 1024px) {
+    #courses .course-card { height: auto; }
+    #courses .container { padding-left: 24px; padding-right: 24px; }
+    #courses .course-card-img { height: 200px; }
+    #courses .course-card-body { overflow: visible; justify-content: flex-start; padding: 20px 18px; }
+    #courses .course-card-body p { display: block; overflow: visible; -webkit-line-clamp: unset; line-clamp: unset; -webkit-box-orient: initial; }
+}
+
+@media (max-width: 480px) {
+    #courses .course-card-img { height: 170px; }
+    #courses .course-card-body { padding: 16px; }
+    #courses .course-card-body h3 { font-size: 0.95rem; }
+    #courses .course-card-body p { font-size: 0.83rem; }
+}

@@ -1,0 +1,14 @@
+.contact-form-section-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 56px; align-items: start; }
+.form-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.map-container { position: relative; min-height: 420px; height: 100%; overflow: hidden; border: 1px solid var(--light-gray); box-shadow: var(--shadow-md); }
+@media (max-width: 1024px) {
+    .contact-form-section-grid { grid-template-columns: 1fr; gap: 40px; }
+}
+@media (max-width: 768px) {
+    .map-container { height: 360px; min-height: unset; }
+    .coverage-grid { grid-template-columns: repeat(2, 1fr) !important; }
+    .contact-info-cards { grid-template-columns: 1fr !important; }
+}
+@media (max-width: 640px) {
+    .form-row-2 { grid-template-columns: 1fr; gap: 0; }
+}
