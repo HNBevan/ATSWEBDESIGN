@@ -213,7 +213,12 @@ if (input) input.addEventListener('input', () => {
     }
 
     /* Section headers — cascade tag → title → subtitle */
-    document.querySelectorAll('.section-tag').forEach(function (el) { tag(el, 'fade', 0); });
+    /* Skip tags inside hero sections — those use CSS animations */
+    document.querySelectorAll('.section-tag').forEach(function (el) {
+        if (!el.closest('.hero') && !el.closest('.page-hero') && !el.closest('.blog-hero')) {
+            tag(el, 'fade', 0);
+        }
+    });
     document.querySelectorAll('.section-title').forEach(function (el) { tag(el, 'up', 70); });
     document.querySelectorAll('.section-subtitle').forEach(function (el) { tag(el, 'up', 150); });
 
@@ -223,10 +228,12 @@ if (input) input.addEventListener('input', () => {
     /* Hero form card */
     document.querySelectorAll('.hero-form-card').forEach(function (el) { tag(el, 'right', 200); });
 
-    /* All h1s — inner page heroes, blog articles, anywhere */
-    document.querySelectorAll('h1').forEach(function (el) { tag(el, 'up', 100); });
-    /* Subtitle/intro paragraph inside page heroes */
-    document.querySelectorAll('.page-hero > .container > p').forEach(function (el) { tag(el, 'up', 200); });
+    /* h1s NOT in hero sections — heroes use CSS animations instead */
+    document.querySelectorAll('h1').forEach(function (el) {
+        if (!el.closest('.hero') && !el.closest('.page-hero') && !el.closest('.blog-hero') && !el.closest('.article-hero')) {
+            tag(el, 'up', 100);
+        }
+    });
 
     /* Two-column splits: image left, text right */
     document.querySelectorAll('.about-grid').forEach(function (g) {
@@ -280,16 +287,6 @@ if (input) input.addEventListener('input', () => {
     document.querySelectorAll('.contact-info-cards').forEach(function (g) { staggerChildren(g, 'up', 70); });
     /* Legal pages */
     document.querySelectorAll('.legal-grid, .rights-grid').forEach(function (g) { staggerChildren(g, 'up', 80); });
-
-    /* ── Homepage hero — staggered entrance sequence ── */
-    document.querySelectorAll('.hero-badge').forEach(function (el) { tag(el, 'fade', 0); });
-    document.querySelectorAll('.hero-title').forEach(function (el) { tag(el, 'up', 80); });
-    document.querySelectorAll('.hero-desc').forEach(function (el) { tag(el, 'up', 180); });
-    document.querySelectorAll('.hero-tags').forEach(function (el) { tag(el, 'up', 260); });
-    document.querySelectorAll('.hero-actions').forEach(function (el) { tag(el, 'up', 340); });
-    document.querySelectorAll('.hero-stats').forEach(function (g) {
-        [].forEach.call(g.children, function (el, i) { tag(el, 'fade', 420 + i * 80); });
-    });
 
     /* ── Misc standalone elements ── */
     document.querySelectorAll('.expert-card').forEach(function (el) { tag(el, 'up', 220); });

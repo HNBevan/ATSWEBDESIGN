@@ -554,4 +554,36 @@ body { font-family: var(--font-main); color: var(--dark-gray); background: var(-
     [data-reveal] { transition: none !important; opacity: 1 !important; transform: none !important; }
 }
 
+/* ─── Hero entrance — CSS animation (reliable on first load, hard refresh, and cached refresh) ─── */
+@keyframes ats-rise {
+    from { opacity: 0; transform: translateY(36px); }
+    to   { opacity: 1; transform: none; }
+}
+@keyframes ats-emerge {
+    from { opacity: 0; transform: translateY(14px); }
+    to   { opacity: 1; transform: none; }
+}
+/* Homepage hero — staggered sequence */
+.hero-badge   { animation: ats-emerge 0.8s cubic-bezier(0.22,1,0.36,1) 0.05s both; }
+.hero-title   { animation: ats-rise   1s   cubic-bezier(0.22,1,0.36,1) 0.15s both; }
+.hero-desc    { animation: ats-rise   1s   cubic-bezier(0.22,1,0.36,1) 0.3s  both; }
+.hero-tags    { animation: ats-rise   1s   cubic-bezier(0.22,1,0.36,1) 0.45s both; }
+.hero-actions { animation: ats-rise   1s   cubic-bezier(0.22,1,0.36,1) 0.55s both; }
+.hero-stats > *:nth-child(1) { animation: ats-emerge 0.9s cubic-bezier(0.22,1,0.36,1) 0.65s both; }
+.hero-stats > *:nth-child(2) { animation: ats-emerge 0.9s cubic-bezier(0.22,1,0.36,1) 0.73s both; }
+.hero-stats > *:nth-child(3) { animation: ats-emerge 0.9s cubic-bezier(0.22,1,0.36,1) 0.81s both; }
+/* Inner page heroes, blog listing, blog articles */
+.page-hero .section-tag,
+.blog-hero .section-tag  { animation: ats-emerge 0.7s cubic-bezier(0.22,1,0.36,1) 0.05s both; }
+.page-hero h1,
+.blog-hero h1,
+.article-hero h1         { animation: ats-rise   1s   cubic-bezier(0.22,1,0.36,1) 0.15s both; }
+.page-hero > .container > p { animation: ats-rise 1s  cubic-bezier(0.22,1,0.36,1) 0.3s  both; }
+@media (prefers-reduced-motion: reduce) {
+    .hero-badge, .hero-title, .hero-desc, .hero-tags, .hero-actions,
+    .hero-stats > *, .page-hero .section-tag, .blog-hero .section-tag,
+    .page-hero h1, .blog-hero h1, .article-hero h1,
+    .page-hero > .container > p { animation: none !important; }
+}
+
 html, body { max-width: 100%; overflow-x: hidden; }
