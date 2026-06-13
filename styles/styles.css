@@ -587,3 +587,4 @@ body { font-family: var(--font-main); color: var(--dark-gray); background: var(-
 }
 
 html, body { max-width: 100%; overflow-x: hidden; }
+* { -webkit-tap-highlight-color: transparent; }
