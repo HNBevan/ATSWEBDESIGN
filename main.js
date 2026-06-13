@@ -166,7 +166,7 @@ if (closeBtn) closeBtn.addEventListener('click', closeSearch);
 
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeSearch(); });
 document.addEventListener('click', e => {
-    if (overlay && !overlay.contains(e.target) && e.target !== toggle) closeSearch();
+    if (overlay && !overlay.contains(e.target) && !e.target.closest('#searchToggle') && !e.target.closest('#searchToggleMobile')) closeSearch();
 });
 
 if (input) input.addEventListener('input', () => {
