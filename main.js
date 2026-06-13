@@ -315,6 +315,28 @@ if (input) input.addEventListener('input', () => {
     });
 }());
 
+/* ---- Blog category filters ---- */
+(function () {
+    var filterBtns = document.querySelectorAll('.blog-filter-btn');
+    var cards = document.querySelectorAll('.blog-listing-card');
+    if (!filterBtns.length || !cards.length) return;
+
+    filterBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            filterBtns.forEach(function (b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+
+            var filter = btn.textContent.trim();
+
+            cards.forEach(function (card) {
+                var tagEl = card.querySelector('.blog-tag');
+                var tagText = tagEl ? tagEl.textContent.trim() : '';
+                card.style.display = (filter === 'All Posts' || tagText === filter) ? '' : 'none';
+            });
+        });
+    });
+}());
+
 /* ---- Cookie consent banner ---- */
 (function () {
     var consent = localStorage.getItem('ats_cookie_consent');
