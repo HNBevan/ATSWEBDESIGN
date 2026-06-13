@@ -296,7 +296,10 @@ if (input) input.addEventListener('input', () => {
     document.querySelectorAll('.about-stat-card').forEach(function (el, i) { tag(el, 'fade', i * 120); });
     document.querySelectorAll('.anim-card').forEach(function (el) { tag(el, 'up'); });
 
-    /* Observe — reveal on scroll */
+    /* Observe — reveal on scroll.
+       Double rAF ensures the browser paints the initial opacity:0 state
+       before the observer fires for already-visible elements, so the
+       entrance transition actually plays on page load. */
     var io = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
             if (entry.isIntersecting) {
@@ -306,7 +309,11 @@ if (input) input.addEventListener('input', () => {
         });
     }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
 
-    document.querySelectorAll('[data-reveal]').forEach(function (el) { io.observe(el); });
+    requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+            document.querySelectorAll('[data-reveal]').forEach(function (el) { io.observe(el); });
+        });
+    });
 }());
 
 /* ---- Cookie consent banner ---- */
