@@ -14,7 +14,7 @@
 <!-- ANNOUNCEMENT BAR -->
 <div class="announcement-bar">
     <i class="fas fa-certificate"></i>&nbsp; HSE Compliant Training | Established 2006 | UK Wide Coverage
-    <a href="index.html#get-quote">Get a Free Quote Today &rarr;</a>
+    <a href="contact.html">Get a Free Quote Today &rarr;</a>
 </div>
 
 <!-- NAVBAR -->
@@ -46,17 +46,30 @@
                         <a href="blog-first-aid-training.html"><i class="fas fa-heart"></i> Why First Aid Training is Crucial</a>
                     </div>
                 </li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="navbar-divider"></div>
+            <button class="search-btn" id="searchToggle" aria-label="Search"><i class="fas fa-search"></i></button>
+            <div class="navbar-divider"></div>
             <a href="tel:0800XXXXXXX" class="navbar-phone"><i class="fas fa-phone-alt"></i> 0800 XXX XXXX</a>
-            <a href="index.html#get-quote" class="btn-primary" style="padding:10px 20px;font-size:0.87rem;margin-left:16px;"><i class="fas fa-file-alt"></i> Free Quote</a>
+            <a href="contact.html" class="btn-primary" style="padding:10px 20px;font-size:0.87rem;margin-left:16px;"><i class="fas fa-file-alt"></i> Free Quote</a>
         </div>
         <div class="nav-mobile-right">
             <button class="search-btn search-btn-mobile" id="searchToggleMobile"><i class="fas fa-search"></i></button>
             <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
         </div>
     </div>
+
+    <!-- Search dropdown -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="Search courses, topics, regions..." autocomplete="off">
+            <button class="search-close" id="searchClose"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="search-results" id="searchResults"></div>
+        <div class="search-no-results" id="searchNoResults">No results found. Try a different search term.</div>
+    </div>
+
     <div class="mobile-menu" id="mobileMenu">
         <a href="about.html">About Us</a>
         <a href="courses.html">Course Catalogue</a>
@@ -1394,12 +1407,8 @@
     </div>
 </footer>
 
+<script src="main.js"></script>
 <script>
-/* Mobile menu */
-document.getElementById('hamburger').addEventListener('click', () => {
-    document.getElementById('mobileMenu').classList.toggle('open');
-});
-
 /* ---- Course details modal ---- */
 function openCourseModal(card) {
     const title = card.querySelector('h3').textContent;
